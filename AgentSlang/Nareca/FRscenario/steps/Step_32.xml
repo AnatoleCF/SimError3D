@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>dontknow</pattern>
+      <pattern>noidea</pattern>
+       <pattern>reject</pattern>      
+    </lPatterns>
+    <lAnswers>
+      <answer>_6 on va regarder ensemble</answer>
+      <answer>_3 on va bien voir</answer>
+	  <answer>_11 on regarde</answer>
+    </lAnswers>
+    <lCommands />
+    <next>34</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>ballposition</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_9 Tu crois vraiment, on va bien voir</answer>
+	  <answer>_3 on va bien voir</answer>
+    </lAnswers>
+    <lCommands />
+    <next>34</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>33</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>33</next>
+  </state> 
+</patterns>
+
+

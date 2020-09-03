@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <!--<state>
+    <lPatterns>
+      <pattern>date</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>4</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>naissance</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>age</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>-->
+  <state>
+    <lPatterns>
+      <pattern>outsideevent</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>4</next>
+  </state>
+</patterns>

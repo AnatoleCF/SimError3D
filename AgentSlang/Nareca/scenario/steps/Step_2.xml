@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>$name </pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Hello $name !</answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>my name is $name1 $name2 </pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Hello $name1 $name2 !</answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>I'm $name </pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Hello $name !</answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+</patterns>

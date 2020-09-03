@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nareca</title>
+    </head>
+    <body>
+        <h1>Nareca</h1>
+
+        <h2>Introduction</h2>
+
+        <p>
+        This directory contains narration data. It is divided into three
+        subfolders:
+
+        <dl>
+            <dt><strong><code>data/</code></strong>
+            <dd>
+            Contains a few CSV files that each contain a story to narrate. A
+            story includes phrases to tell, what the user can possibly say at
+            each step, what to answer to such responses, as well as a few
+            directives that enable to show pictures or change the title of the
+            window.
+
+            <dd>
+            More precisely, those CSV files have the following columns,
+            separated by a semi-column (<q>;</q>):
+            <ul>
+                <li>Step number
+                <li>Commands to execute at the beginning of the step (see
+                    <a href="#commands">below</a> for a list of possible
+                    commands), separated by a vertical pipe character (<q>|</q>)
+                <li>Story text for the current step
+                <li>Possible user input (what follows is then dependant on the
+                    actual response of the user matching the provided pattern)
+                <li>Possible answer to such input
+                <li>Commands to execute after answering
+                <li>Number of the next step
+            </ul>
+
+            <dt><strong><code>scenario/</code></strong>
+            <dd>
+            This folder contains a single story to narrate. It consists of the
+            following files:
+
+            <dl>
+                <dt><code>story/Story.xml</code>
+                <dd>
+                This XML file contains the text of each story step as well as
+                the <a href="#commands">commands</a> that should be executed
+                prior to speaking.
+
+                <dt><code>steps/Step_&lt;i&gt;.xml</code>
+                <dd>
+                Each of these files corresponds to a step of the story and
+                indicates the patterns of the answers that the user could give.
+                Those patterns are given in the Synnbad syntax and,
+                additionally, <q>wxcvbn</q> corresponds to an absence of answer.
+
+                <dt><code>slides/slide&lt;i&gt;.png</code>
+                <dd>
+                Pictures that can be shown to the user using the
+                <code>displaySlide &lt;i&gt;</code> command.
+
+                <dt><code>outOfContext/OutOfContext.xml</code>
+                <dd>
+                This file defines <q>fallback</q> answers. It can be thought as
+                patterns that are implicitly added at the end of every
+                <code>steps/Step_&lt;i&gt;.xml</code> file.
+            </dl>
+
+            <dt><strong><code>script/</code></strong>
+            <dd>
+            Contains a few convenience scripts to work with the CSV files in
+            <code>data/</code>. You need to have
+            <a href="http://groovy-lang.org/">Groovy</a> installed to run some
+            of them.
+
+            <dd>
+            Those scripts are:
+            <dl>
+                <dt><code>emptyGenerator.groovy</code>
+                <dd>
+                Converts a text file containing one sentence per line into a
+                basic CSV file.
+
+                <dt><code>scriptGenerator.groovy</code>
+                <dd>
+                Converts a CSV file into a folder suitable for use as
+                <code>scenario/</code> (except for <code>outOfContext</code> or
+                the slides, which are not generated).
+
+                <dt><code>storyGenerator.bash</code>
+                <dd>
+                Although it technically is not, it can be seen as the
+                composition of the previous two scripts: from a simple text
+                file, it generates a basic <code>scenario/</code> structure.
+
+                <dt><code>storyRecovery.groovy</code>
+                <dd>
+                Extracts the text of a story from its CSV file.
+            </dl>
+        </dl>
+
+        <h2 id="commands">Commands</h2>
+
+        <p>
+        Several commands can be used inside stories:
+
+        <h3><code>displaySlide</code></h3>
+
+        <p>
+        Sets the slide that should be displayed for the current step. For
+        example:
+
+        <pre><code>displaySlide 5</code></pre>
+        will make it so <code>slides/slide_5.png</code> will be displayed.
+
+        <h3><code>changeTitle</code></h3>
+
+        <p>
+        Changes the title of the window. For example:
+        <pre><code>changeTitle My story</code></pre>
+    </body>
+</html>

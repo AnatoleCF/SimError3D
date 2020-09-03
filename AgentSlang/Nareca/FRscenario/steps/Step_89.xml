@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+    <lPatterns>
+      <pattern>reject</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>90</next>
+  </state>
+   <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>90</next> 
+   </state>
+   <state>
+    <lPatterns>
+      <pattern>opinionabouthead</pattern>
+     <pattern>opinionwhattheydo</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_6 on va regader ensemble</answer>
+	  <answer>_9 tu crois vraiment on va bien voir</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>90</next>
+  </state>
+   <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>90</next>
+  </state>   
+    <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>90</next>
+  </state>
+</patterns>

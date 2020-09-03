@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>[ok]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[yes]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[no]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Get ready then!</answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+</patterns>

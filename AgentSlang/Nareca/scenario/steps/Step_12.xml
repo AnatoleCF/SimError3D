@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>[yes]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Great!</answer>
+    </lAnswers>
+    <lCommands />
+    <next>13</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[no]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Then check the display in front of you </answer>
+    </lAnswers>
+    <lCommands />
+    <next>13</next>
+  </state>
+</patterns>

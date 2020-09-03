@@ -1,0 +1,97 @@
+1;;;;;;1
+2;;Hello, my name is Mary. And you, what is your name?;$name ;Hello $name !;;3
+2;;Hello, my name is Mary. And you, what is your name?;my name is $name1 $name2 ;Hello $name1 $name2 !;;3
+2;;Hello, my name is Mary. And you, what is your name?;I'm $name ;Hello $name !;;3
+3;;I am really glad to meet you.;so am I;;;4
+3;;I am really glad to meet you.;[me] too;;;4
+3;;I am really glad to meet you.;;;;4
+4;;How old are you?;$age ;Great to know!;;5
+4;;How old are you?;$word $word $age years old;$age years old?;;5
+4;;How old are you?;old [enough];I see.;;5
+5;;You're big now!;[yes];;;6
+5;;You're big now!;[thanks];;;6
+5;;You're big now!;[indeed];;;6
+5;;You're big now!;;;;6
+5;;You're big now!;hum;yes.;;6
+5;;You're big now!;[right];;;6
+5;;You're big now!;[no];Well, if you say so.;;6
+6;;Tell me ... What grade are you in?;$number year;$number year?;;7
+6;;Tell me ... What grade are you in?;$words* in $number year;$number year?;;7
+6;;Tell me ... What grade are you in?;$words* in $number grade;$number grade?;;7
+6;;Tell me ... What grade are you in?;$number grade;$number grade?;;7
+7;;That's good!;;;;8
+7;;That's good!;[yes];;;8
+7;;That's good!;[thanks];;;8
+7;;That's good!;[thank];;;8
+7;;That's good!;[right];;;8
+7;;That's good!;[no];If you say so.;;8
+8;;Would you like to read a story with me?;[yes];;;9
+8;;Would you like to read a story with me?;why not;;;9
+8;;Would you like to read a story with me?;[no];Let's start anyway, you will see how good it is!;;9
+9;;Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? ;[ok];;;10
+9;;Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? ;[yes];;;10
+9;;Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? ;all right;;;10
+9;;Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? ;[understand];;;10
+9;;Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? ;[no];We will see that in time then.;;10
+10;;" Let's start now! You will see how funny this story is. It's called ""The perched ball"".";;;;11
+10;;" Let's start now! You will see how funny this story is. It's called ""The perched ball"".";[ok];;;11
+10;;" Let's start now! You will see how funny this story is. It's called ""The perched ball"".";[okay];;;11
+10;;" Let's start now! You will see how funny this story is. It's called ""The perched ball"".";[yes];;;11
+11;;Ready?;[ok];;;12
+11;;Ready?;[yes];;;12
+11;;Ready?;[no];Get ready then!;;12
+12;;Let's goooooo! Can you see the picture?;[yes];Great!;;13
+12;;Let's goooooo! Can you see the picture?;[no];Then check the display in front of you ;;13
+13;;It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here!;[yes];;;14
+13;;It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here!;[indeed];;;14
+13;;It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here!;[right];;;14
+13;;It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here!;;;;14
+14;;And here, this small boy with his ball, it's Salim.;;;;15
+14;;And here, this small boy with his ball, it's Salim.;[yes];;;15
+14;;And here, this small boy with his ball, it's Salim.;I [see];;;15
+14;;And here, this small boy with his ball, it's Salim.;[okay];;;15
+15;;"He calls his friends ""Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream « Me me ! ». « Let's go then! »";;;;16
+15;;"He calls his friends ""Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream « Me me ! ». « Let's go then! »";[yes];;;16
+15;;"He calls his friends ""Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream « Me me ! ». « Let's go then! »";[okay];;;16
+16;;The game is starting, and Sebastien pulls hard in the ball. Wooow, the ball flies really high!;;;;17
+16;;The game is starting, and Sebastien pulls hard in the ball. Wooow, the ball flies really high!;[yes];;;17
+17;;Oh my god, where will the ball land? Do you know it?;[No];Let's take a look at it.;;18
+17;;Oh my god, where will the ball land? Do you know it?;[yes];Let's take a look at it.;;18
+17;;Oh my god, where will the ball land? Do you know it?;[tree];Let's take a look at it.;;18
+17;;Oh my god, where will the ball land? Do you know it?;[roof];Yes, you are right!;;18
+18;;What a disaster!!! Booyah! Check out the ball! It's stuck on the roof!;Oops;;;19
+18;;What a disaster!!! Booyah! Check out the ball! It's stuck on the roof!;[yes];;;19
+18;;What a disaster!!! Booyah! Check out the ball! It's stuck on the roof!;oh my god;;;19
+18;;What a disaster!!! Booyah! Check out the ball! It's stuck on the roof!;[no];Yes, it's is! Check out the roof.;;19
+18;;What a disaster!!! Booyah! Check out the ball! It's stuck on the roof!;;;;19
+19;;But how are we going to get it back now?;don't know;;;20
+19;;But how are we going to get it back now?;;;;20
+19;;But how are we going to get it back now?;[no] [idea];;;20
+19;;But how are we going to get it back now?;They will call;Yes, that's a good idea.;;20
+19;;But how are we going to get it back now?;They [could] call $name;Yes, that's a good idea., they could call $name.;;20
+19;;But how are we going to get it back now?;[stick];Yes, that's a good idea.;;20
+19;;But how are we going to get it back now?;[ladder];Yes, that's a good idea.;;20
+19;;But how are we going to get it back now?;[stool];Yes, that's a good idea.;;20
+19;;But how are we going to get it back now?;[master]; that's a good idea.;;20
+19;;But how are we going to get it back now?;[mistress]; that's a good idea.;;20
+19;;But how are we going to get it back now?;[teacher]; that's a good idea.;;20
+20;;Oh my god! Look next to the ball! What for an idea !?! He threw up his carrot on the roof!;;;;21
+20;;Oh my god! Look next to the ball! What for an idea !?! He threw up his carrot on the roof!;[yes];;;21
+21;;Look at Salim! He is in stocking feet!! That's not really clever...;;;;22
+21;;Look at Salim! He is in stocking feet!! That's not really clever...;[indeed];;;22
+21;;Look at Salim! He is in stocking feet!! That's not really clever...;[yes];;;22
+21;;Look at Salim! He is in stocking feet!! That's not really clever...;[right];;;22
+22;;I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? ;[right];;;23
+22;;I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? ;[yes];;;23
+22;;I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? ;[sure];;;23
+22;;I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? ;[no];;;24
+22;;I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? ;I don't think;;;24
+22;;I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? ;;;;24
+23;; Yes, you are right ! It's not a carrot, but a boot.;;;;25
+23;; Yes, you are right ! It's not a carrot, but a boot.;[it];;;25
+23;; Yes, you are right ! It's not a carrot, but a boot.;[yes];;;25
+24;;Hum, wait! We do not call this in that way ?! Hum, now I remember, it's called a boot.;;;;25
+24;;Hum, wait! We do not call this in that way ?! Hum, now I remember, it's called a boot.;[right];;;25
+24;;Hum, wait! We do not call this in that way ?! Hum, now I remember, it's called a boot.;[yes];;;25
+25;;Yes, that's it. Salim threw up his boot to drop the ball !!!;;;;26
+26;;Duh ! he missed it ! The ball is still stuck and the carro... hem, I mean the boot is also stuck now !;;;;

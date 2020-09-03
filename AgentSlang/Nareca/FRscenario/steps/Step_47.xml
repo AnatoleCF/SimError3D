@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+    <lPatterns>
+      <pattern>reject</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_6 on va regarder ensemble</answer>
+	    <answer>_3 on va bien voir</answer>
+    </lAnswers>
+    <lCommands />
+    <next>48</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+     <answer>_16 Ok</answer>
+    </lAnswers>
+    <lCommands />
+    <next>48</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>reasonthrowboot</pattern>
+    </lPatterns>
+    <lAnswers>
+	   <answer>_16 ok</answer>
+	   <answer>_13 Ah d'accord</answer>
+	    <answer>_12 je suis d'accord avec toi on regarde</answer>
+    </lAnswers>
+    <lCommands />
+    <next>48</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+        <answer>_6 on va regader ensemble</answer>
+    </lAnswers>
+    <lCommands />
+    <next>48</next>
+  </state>
+    <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>48</next>
+  </state> 
+</patterns>

@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>so am I</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>4</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[me] too</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>4</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>4</next>
+  </state>
+</patterns>

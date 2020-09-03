@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<story>
+  <state><!-- Step #1 -->
+    <lCommands>
+      <command>changeTitle - The Perched Ball -</command>
+      <command>displaySlide 0</command>
+	  <command>bml:Walk</command>
+    </lCommands>
+    <story></story>
+  </state>
+  <state><!-- Step #2 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+	  <command>bml:wave</command>
+    </lCommands>
+    <story>Hello, my name is Mary. And you, what is your name?</story>
+  </state>
+  <state><!-- Step #3 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>I am really glad to meet you.</story>
+  </state>
+  <state><!-- Step #4 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>How old are you?</story>
+  </state>
+  <state><!-- Step #5 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>You're big now!</story>
+  </state>
+  <state><!-- Step #6 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>Tell me ... What grade are you in?</story>
+  </state>
+  <state><!-- Step #7 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>That's good!</story>
+  </state>
+  <state><!-- Step #8 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>Would you like to read a story with me?</story>
+  </state>
+  <state><!-- Step #9 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? </story>
+  </state>
+  <state><!-- Step #10 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story> Let's start now! You will see how funny this story is. It's called "The perched ball".</story>
+  </state>
+  <state><!-- Step #11 -->
+    <lCommands>
+      <command>displaySlide 0</command>
+    </lCommands>
+    <story>Ready?</story>
+  </state>
+  <state><!-- Step #12 -->
+    <lCommands>
+      <command>displaySlide 1</command>
+    </lCommands>
+    <story>Let's goooooo! Can you see the picture?</story>
+  </state>
+  <state><!-- Step #13 -->
+    <lCommands>
+      <command>displaySlide 1</command>
+    </lCommands>
+    <story>It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here!</story>
+  </state>
+  <state><!-- Step #14 -->
+    <lCommands>
+      <command>displaySlide 1</command>
+    </lCommands>
+    <story>And here, this small boy with his ball, it's Salim.</story>
+  </state>
+  <state><!-- Step #15 -->
+    <lCommands>
+      <command>displaySlide 1</command>
+    </lCommands>
+    <story>He calls his friends "Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream « Me me ! ». « Let's go then! »</story>
+  </state>
+  <state><!-- Step #16 -->
+    <lCommands>
+      <command>displaySlide 2</command>
+    </lCommands>
+    <story>The game is starting, and Sebastien pulls hard in the ball. Wooow, the ball flies really high!</story>
+  </state>
+  <state><!-- Step #17 -->
+    <lCommands>
+      <command>displaySlide 2</command>
+    </lCommands>
+    <story>Oh my god, where will the ball land? Do you know it?</story>
+  </state>
+  <state><!-- Step #18 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>What a disaster!!! Booyah! Check out the ball! It's stuck on the roof!</story>
+  </state>
+  <state><!-- Step #19 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>But how are we going to get it back now?</story>
+  </state>
+  <state><!-- Step #20 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>Oh my god! Look next to the ball! What for an idea !?! He threw up his carrot on the roof!</story>
+  </state>
+  <state><!-- Step #21 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>Look at Salim! He is in stocking feet!! That's not really clever...</story>
+  </state>
+  <state><!-- Step #22 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>I know, it's his carrot which is on the roof, yes!! Tell me, we call this a carrot, right? </story>
+  </state>
+  <state><!-- Step #23 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story> Yes, you are right ! It's not a carrot, but a boot.</story>
+  </state>
+  <state><!-- Step #24 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>Hum, wait! We do not call this in that way ?! Hum, now I remember, it's called a boot.</story>
+  </state>
+  <state><!-- Step #25 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>Yes, that's it. Salim threw up his boot to drop the ball !!!</story>
+  </state>
+  <state><!-- Step #26 -->
+    <lCommands>
+      <command>displaySlide 3</command>
+    </lCommands>
+    <story>Duh ! he missed it ! The ball is still stuck and the carro... hem, I mean the boot is also stuck now !</story>
+  </state>
+</story>

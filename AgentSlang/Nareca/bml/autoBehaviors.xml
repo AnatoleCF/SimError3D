@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AutoBehaviors>
+
+  <bml id="bml-step-1">
+    <posture
+			id="Talking_arms"
+                	define_as_rest_pose="false"
+                	transition="Rest Pose"
+                	part="WHOLE"
+                	stance="Talking Arms"
+                	facing="_CAMERA"
+                	turn_speed="0.89"
+                	loop="false"
+                	blend_duration="0.4" />
+
+  </bml>
+  <bml id="bml-step-2">
+    <posture
+                id="Talking_arms"
+                define_as_rest_pose="false"
+                transition="Rest Pose"
+                part="WHOLE"
+                stance="Talking Arms"
+                facing=""
+                turn_speed="0.89"
+                loop="false"
+                blend_duration="0.2" />
+
+
+  </bml>
+  <bml id="bml-step-3">
+    <posture
+                    id="Talking_arms_short"
+                    define_as_rest_pose="false"
+                    transition="Rest Pose"
+                    part="WHOLE"
+                    stance="Talking Arms short"
+                    facing=""
+                    turn_speed="0.89"
+                    loop="false"
+                    blend_duration="1.0" />
+
+  </bml>
+  <bml id="bml-step-4">
+    <posture
+                id="Talking_arms"
+                define_as_rest_pose="false"
+                transition="Rest Pose"
+                part="WHOLE"
+                stance="Talking Arms"
+                facing=""
+                turn_speed="0.89"
+                loop="false"
+                blend_duration="0.2" />
+  </bml>
+  <bml id="bml-step-5">
+    <posture
+			id="Talking_arms_short"
+                	define_as_rest_pose="false"
+                	transition="Rest Pose"
+                	part="WHOLE"
+                	stance="Talking Arms short"
+                	facing="_CAMERA"
+                	turn_speed="0.89"
+                	loop="false"
+                	blend_duration="1.0" />
+  </bml>
+  <bml id="bml-step-6">
+    <posture
+    id="Talking_arms_short"
+                define_as_rest_pose="false"
+                transition="Rest Pose"
+                part="WHOLE"
+                stance="Talking Arms short"
+                facing="_CAMERA"
+                turn_speed="0.89"
+                loop="false"
+                blend_duration="1.0" />
+  </bml>
+  <bml id="bml-not_understood">
+    <face
+                	id="clear"
+                	type="FACS"
+                	side="BOTH"
+                	amount="0"
+                	au="marc:ALL"
+                	interpolate="0.2" />
+    <face
+                	id="animation_not_understood" >
+      <description
+				level="1"
+				type="marcbml">
+        <facial_animation
+					name="ShakeHead"
+					interpolate="0.0"
+					loop="false"
+					intensity="0.2" />
+      </description>
+    </face>
+  </bml>
+  <bml id="bmlIdle-3">
+    <posture
+            id="idle"
+            define_as_rest_pose="false"
+            transition="Rest Pose"
+            part="WHOLE"
+            stance="idle"
+            facing=""
+            turn_speed="0.89"
+            loop="false"
+            blend_duration="0.2" />
+
+  </bml>
+  <bml id="bmlIdle-1">
+    <face id="animation_not_understood" >
+      <description
+         level="1"
+         type="marcbml">
+        <facial_animation
+          name="Nod"
+          interpolate="0.0"
+            loop="false"
+          intensity="0.2" />
+      </description>
+    </face>
+  </bml>
+  
+  <bml id="bmlIdle-2">
+    <face id="animation_not_understood" >
+      <description
+         level="1"
+         type="marcbml">
+        <facial_animation
+          name="ShakeHead"
+          interpolate="0.0"
+            loop="false"
+          intensity="0.2" />
+      </description>
+    </face>
+
+  </bml>
+
+
+</AutoBehaviors>

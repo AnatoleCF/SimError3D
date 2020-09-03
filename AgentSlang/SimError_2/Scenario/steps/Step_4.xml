@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <!--<state>
+    <lPatterns>
+      <pattern>aurevoir</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>5</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>salut</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>5</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>bientot</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>5</next>
+  </state>-->
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>5</next>
+  </state>
+</patterns>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>   
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+	  </lPatterns>
+    <lAnswers>
+        <answer>_15 hmm ca m'étonne moi</answer>
+		<answer>_8 ah je ne suis pas tout a fait d'accord</answer>
+		<answer>_7 ah je ne suis pas tout a fait sure</answer>
+    </lAnswers>
+    <lCommands />
+    <next>132</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>reject</pattern>
+	  </lPatterns>
+    <lAnswers>
+        <answer>_10 je suis d'accord avec toi</answer>
+		<answer>_5 c'est bien ce que je pense moi aussi</answer>
+    </lAnswers>
+    <lCommands />
+    <next>132</next>
+  </state>
+    <state>
+    <lPatterns>
+      <pattern>opinionaboutteacher</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_2 Tu crois vraiment</answer>
+	    <answer>_3 on va bien voir</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>132</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_3 on va bien voir</answer>
+    </lAnswers>
+    <lCommands />
+    <next>132</next>
+  </state>  
+  <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>132</next>
+  </state>
+</patterns>

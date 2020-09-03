@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+    <lPatterns>
+      <pattern>metoo</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>87</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>87</next>
+  </state>
+    <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>87</next>
+  </state>
+</patterns>

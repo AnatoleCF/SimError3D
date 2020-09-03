@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+    <lPatterns>
+      <pattern>reject</pattern>
+       <pattern>negativeopinion</pattern>  
+     </lPatterns>
+    <lAnswers>
+	    <answer>_5 c'est bien ce que je pense moi aussi</answer>
+		<answer>_17 je pense bien moi aussi</answer>
+		<answer>_18 oui, je pense que tu as raison</answer>
+    </lAnswers>
+    <lCommands />
+    <next>50</next>
+  </state>
+   <state>
+    <lPatterns>
+            <pattern>dontknow</pattern>
+      </lPatterns>
+    <lAnswers>
+	    <answer>_11 on regarde</answer>
+	   </lAnswers>
+    <lCommands />
+    <next>50</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+       <pattern>positiveopinion</pattern> 
+    </lPatterns>
+    <lAnswers>
+       <answer>_8 ah, je ne suis pas tout à fait d'accord</answer>
+	   <answer>_7 ah, je ne suis pas tout à fait sure</answer>
+    </lAnswers>
+    <lCommands />
+    <next>50</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+     <answer>_3 on va bien voir</answer>
+    </lAnswers>
+    <lCommands />
+    <next>50</next>
+  </state>
+   <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>51</next>
+  </state> 
+</patterns>

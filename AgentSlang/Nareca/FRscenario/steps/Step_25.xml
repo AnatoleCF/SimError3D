@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>26</next>
+  </state>
+    <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+     <answer>_9 Tu crois vraiment, on va bien voir</answer>
+	 <answer>_2 Tu crois vraiment</answer>
+	 <answer>_3 on va bien voir</answer>
+    </lAnswers>
+    <lCommands />
+    <next>26</next>
+  </state> 
+</patterns>

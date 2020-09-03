@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <!--<lPatterns>
+      <pattern>prénom</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>nom</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>appelles</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>appellez</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+  <state>-->
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>3</next>
+  </state>
+</patterns>

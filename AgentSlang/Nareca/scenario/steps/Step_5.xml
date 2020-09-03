@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>[yes]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[thanks]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[indeed]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>hum</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>yes.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[right]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[no]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Well, if you say so.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>6</next>
+  </state>
+</patterns>

@@ -1,0 +1,23 @@
+
+cd /D C:\Users\Anatole\Desktop\AgentSlang\AgentSlang\bin
+
+AgentSlang -config ../config/config-nareca-auto-1m-user.xml -profile profile1
+
+AgentSlang -config ../config/config-nareca-one-machine.xml -profile profile1
+
+AgentSlang -config ../config/config-simerror-2.xml -profile profile1
+
+
+F:\DEV\Git\_Keyveo\agentslang.github.io\pages\src\AgentSlang\src\org\agent\slang\out
+
+
+GROOVY
+
+ groovy ../../AgentSlang/AgentSlang/SimError/script/storyRecovery.groovy ../../AgentSlang/AgentSlang/SimError/data/SimError_Story.txt ../../AgentSlang/AgentSlang/SimError/data/SimError_Story_Formated.txt
+
+
+  groovy ../../AgentSlang/AgentSlang/SimError/script/scriptGenerator.groovy ../../AgentSlang/AgentSlang/SimError/data/SimError_Story.txt
+
+
+
+  bash storyGenerator.bash ../data/[FR]story.txt 

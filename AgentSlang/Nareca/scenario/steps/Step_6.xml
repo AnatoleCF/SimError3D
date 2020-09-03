@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>$number year</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>$number year?</answer>
+    </lAnswers>
+    <lCommands />
+    <next>7</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$words* in $number year</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>$number year?</answer>
+    </lAnswers>
+    <lCommands />
+    <next>7</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$words* in $number grade</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>$number grade?</answer>
+    </lAnswers>
+    <lCommands />
+    <next>7</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$number grade</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>$number grade?</answer>
+    </lAnswers>
+    <lCommands />
+    <next>7</next>
+  </state>
+</patterns>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patterns>
+    <state>
+        <lPatterns>
+            <pattern>Opattern11</pattern>
+            <pattern>Opattern12</pattern>
+            <pattern>Opattern13</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer>Oanswer11</answer>
+            <answer>Oanswer12</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>Opattern21</pattern>
+            <pattern>Opattern22</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer>Oanswer21</answer>
+            <answer>Oanswer22</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>Opattern21</pattern>
+            <pattern>Opattern31</pattern>
+            <pattern>Opattern32</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer>Oanswer31</answer>
+            <answer>Oanswer32</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>wxcvbn</pattern> <!--> This pattern is considered as empty ! <-->
+        </lPatterns>
+        <lAnswers>
+            <answer>Don't be so shy, I am listening to you. :) </answer>
+            <answer>I didn't hear you, please go on !</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+
+    <state>
+        <lPatterns>
+            <pattern>default</pattern> <!--> This pattern "default", for any action not understood by the agent <-->
+        </lPatterns>
+        <lAnswers>
+            <answer>I am sorry, but I didn't catch what you said. Could you tell it in another way please ?</answer>
+            <answer>I am afraid I didn't understand. Could you rephrase it please ? </answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+
+</patterns>
+

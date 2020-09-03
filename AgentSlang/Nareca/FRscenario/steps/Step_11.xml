@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>thanks</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>reject</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_4 Allez on continue</answer>
+      <answer>_6 on va regarder ensamble</answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>12</next>
+  </state>
+</patterns>

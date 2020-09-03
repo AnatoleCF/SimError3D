@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+    <lPatterns>
+      <pattern>dontknow</pattern>
+       <pattern>reject</pattern>
+    </lPatterns>
+    <lAnswers>
+	   <answer>_3 on va bien voir</answer>
+	    <answer>_11 on regarde</answer>
+    </lAnswers>
+    <lCommands />
+    <next>58</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+	   <answer>_3 on va bien voir</answer>
+	    <answer>_11 on regarde</answer>
+    </lAnswers>
+    <lCommands />
+    <next>58</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>retrieveball</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_2 Tu crois vraiment</answer>
+	  <answer>_13 ah d'accord</answer>
+	   <answer>_18 oui je pense que tu as raison</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>58</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+       <answer>_4 Allez on continue</answer>
+    </lAnswers>
+    <lCommands />
+    <next>58</next>
+  </state>
+   <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>58</next>
+  </state>
+</patterns>

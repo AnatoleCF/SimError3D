@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+    <lPatterns>
+      <pattern>outsideevent</pattern>
+    </lPatterns>
+    <lAnswers>
+	    <answer>_9 tu crois vraiment on va bien voir</answer>
+		<answer>_5 c'est bien ce que je pense moi aussi</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>124</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_6 on va regarder ensemble</answer>
+    </lAnswers>
+    <lCommands />
+    <next>124</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>124</next>
+  </state>
+</patterns>

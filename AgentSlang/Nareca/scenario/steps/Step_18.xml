@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>Oops</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>19</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[yes]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>19</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>oh my god</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>19</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[no]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, it's is! Check out the roof.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>19</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>19</next>
+  </state>
+</patterns>

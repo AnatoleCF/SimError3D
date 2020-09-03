@@ -1,0 +1,96 @@
+1				tellStory 2+AHw-changeTitle +AC0- The Perched ball +AC0AfA-	1
+2	Hello, my name is Mary. And you, what is your name?	+ACQ-name 	Hello +ACQ-name +ACE-	tellStory 3+AHw-	3
+2	Hello, my name is Mary. And you, what is your name?	my name is +ACQ-name1 +ACQ-name2 	Hello +ACQ-name1 +ACQ-name2 +ACE-	tellStory 3+AHw-	3
+2	Hello, my name is Mary. And you, what is your name?	I'm +ACQ-name 	Hello +ACQ-name +ACE-	tellStory 3+AHw-	3
+3	I am really glad to meet you.	so am I		tellStory 4+AHw-	4
+3	I am really glad to meet you.	+AFs-me+AF0- too		tellStory 4+AHw-	4
+3	I am really glad to meet you.			tellStory 4+AHw-	4
+4	How old are you?	+ACQ-age 	Great to know+ACE-	tellStory 5+AHw-	5
+4	How old are you?	+ACQ-word +ACQ-word +ACQ-age years old	+ACQ-age years old?	tellStory 5+AHw-	5
+4	How old are you?	old +AFs-enough+AF0-	I see.	tellStory 5+AHw-	5
+5	You're big now+ACE-	+AFs-yes+AF0-		tellStory 6+AHw-	6
+5	You're big now+ACE-	+AFs-thanks+AF0-		tellStory 6+AHw-	6
+5	You're big now+ACE-	+AFs-indeed+AF0-		tellStory 6+AHw-	6
+5	You're big now+ACE-			tellStory 6+AHw-	6
+5	You're big now+ACE-	hum	yes.	tellStory 6+AHw-	6
+5	You're big now+ACE-	+AFs-right+AF0-		tellStory 6+AHw-	6
+5	You're big now+ACE-	+AFs-no+AF0-	Well, if you say so.	tellStory 6+AHw-	6
+6	Tell me ... What grade are you in?	+ACQ-number year	+ACQ-number year?	tellStory 7+AHw-	7
+6	Tell me ... What grade are you in?	+ACQ-words+ACo- in +ACQ-number year	+ACQ-number year?	tellStory 7+AHw-	7
+6	Tell me ... What grade are you in?	+ACQ-words+ACo- in +ACQ-number grade	+ACQ-number grade?	tellStory 7+AHw-	7
+6	Tell me ... What grade are you in?	+ACQ-number grade	+ACQ-number grade?	tellStory 7+AHw-	7
+7	That's good+ACE-			tellStory 8+AHw-	8
+7	That's good+ACE-	+AFs-yes+AF0-		tellStory 8+AHw-	8
+7	That's good+ACE-	+AFs-thanks+AF0-		tellStory 8+AHw-	8
+7	That's good+ACE-	+AFs-thank+AF0-		tellStory 8+AHw-	8
+7	That's good+ACE-	+AFs-right+AF0-		tellStory 8+AHw-	8
+7	That's good+ACE-	+AFs-no+AF0-	If you say so.	tellStory 8+AHw-	8
+8	Would you like to read a story with me?	+AFs-yes+AF0-		tellStory 9+AHw-	9
+8	Would you like to read a story with me?	why not		tellStory 9+AHw-	9
+8	Would you like to read a story with me?	+AFs-no+AF0-	Let's start anyway, you will see how good it is+ACE-	tellStory 9+AHw-	9
+9	Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? 	+AFs-ok+AF0-		tellStory 10+AHw-	10
+9	Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? 	+AFs-yes+AF0-		tellStory 10+AHw-	10
+9	Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? 	all right		tellStory 10+AHw-	10
+9	Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? 	+AFs-understand+AF0-		tellStory 10+AHw-	10
+9	Before starting, I have to tell you that, at the half of the story, I will have to leave and let my friend finish the story. You see? 	+AFs-no+AF0-	We will see that in time then.	tellStory 10+AHw-	10
+10	+ACI- Let's start now+ACE- You will see how funny this story is. It's called +ACIAIg-The perched ball+ACIAIg-.+ACI-			tellStory 11+AHw-	11
+10	+ACI- Let's start now+ACE- You will see how funny this story is. It's called +ACIAIg-The perched ball+ACIAIg-.+ACI-	+AFs-ok+AF0-		tellStory 11+AHw-	11
+10	+ACI- Let's start now+ACE- You will see how funny this story is. It's called +ACIAIg-The perched ball+ACIAIg-.+ACI-	+AFs-okay+AF0-		tellStory 11+AHw-	11
+10	+ACI- Let's start now+ACE- You will see how funny this story is. It's called +ACIAIg-The perched ball+ACIAIg-.+ACI-	+AFs-yes+AF0-		tellStory 11+AHw-	11
+11	Ready?	+AFs-ok+AF0-		tellStory 12+AHw-displaySlide 1+AHw-	12
+11	Ready?	+AFs-yes+AF0-		tellStory 12+AHw-displaySlide 1+AHw-	12
+11	Ready?	+AFs-no+AF0-	Get ready then+ACE-	tellStory 12+AHw-displaySlide 1+AHw-	12
+12	Let's goooooo+ACE- Can you see the picture?	+AFs-yes+AF0-	Great+ACE-	tellStory 13+AHw-	13
+12	Let's goooooo+ACE- Can you see the picture?	+AFs-no+AF0-	Then check the display in front of you 	tellStory 13+AHw-	13
+13	It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here+ACE-	+AFs-yes+AF0-		tellStory 14+AHw-	14
+13	It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here+ACE-	+AFs-indeed+AF0-		tellStory 14+AHw-	14
+13	It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here+ACE-	+AFs-right+AF0-		tellStory 14+AHw-	14
+13	It's morning, and all children arrive at school. Oh, look at him, he doesn't see really happy to be here+ACE-			tellStory 14+AHw-	14
+14	And here, this small boy with his ball, it's Salim.			tellStory 15+AHw-	15
+14	And here, this small boy with his ball, it's Salim.	+AFs-yes+AF0-		tellStory 15+AHw-	15
+14	And here, this small boy with his ball, it's Salim.	I +AFs-see+AF0-		tellStory 15+AHw-	15
+14	And here, this small boy with his ball, it's Salim.	+AFs-okay+AF0-		tellStory 15+AHw-	15
+15	+ACI-He calls his friends +ACIAIg-Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream +AKsAoA-Me me+AKAAIQCgALs-. +AKsAoA-Let's go then+ACEAoAC7-+ACI-			tellStory 16+AHw-displaySlide 2+AHw-	16
+15	+ACI-He calls his friends +ACIAIg-Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream +AKsAoA-Me me+AKAAIQCgALs-. +AKsAoA-Let's go then+ACEAoAC7-+ACI-	+AFs-yes+AF0-		tellStory 16+AHw-displaySlide 2+AHw-	16
+15	+ACI-He calls his friends +ACIAIg-Hey Guys, there is still some time before the bell rings, who wants to play with me ? Sebastien and Cindy scream +AKsAoA-Me me+AKAAIQCgALs-. +AKsAoA-Let's go then+ACEAoAC7-+ACI-	+AFs-okay+AF0-		tellStory 16+AHw-displaySlide 2+AHw-	16
+16	The game is starting, and Sebastien pulls hard in the ball. Wooow, the ball flies really high+ACE-			tellStory 17+AHw-	17
+16	The game is starting, and Sebastien pulls hard in the ball. Wooow, the ball flies really high+ACE-	+AFs-yes+AF0-		tellStory 17+AHw-	17
+17	Oh my god, where will the ball land? Do you know it?	+AFs-No+AF0-	Let's take a look at it.	tellStory 18+AHw-displaySlide 3+AHw-	18
+17	Oh my god, where will the ball land? Do you know it?	+AFs-yes+AF0-	Let's take a look at it.	tellStory 18+AHw-displaySlide 3+AHw-	18
+17	Oh my god, where will the ball land? Do you know it?	+AFs-tree+AF0-	Let's take a look at it.	tellStory 18+AHw-displaySlide 3+AHw-	18
+17	Oh my god, where will the ball land? Do you know it?	+AFs-roof+AF0-	Yes, you are right+ACE-	tellStory 18+AHw-displaySlide 3+AHw-	18
+18	What a disaster+ACEAIQAh- Booyah+ACE- Check out the ball+ACE- It's stuck on the roof+ACE-	Oops		tellStory 19+AHw-	19
+18	What a disaster+ACEAIQAh- Booyah+ACE- Check out the ball+ACE- It's stuck on the roof+ACE-	+AFs-yes+AF0-		tellStory 19+AHw-	19
+18	What a disaster+ACEAIQAh- Booyah+ACE- Check out the ball+ACE- It's stuck on the roof+ACE-	oh my god		tellStory 19+AHw-	19
+18	What a disaster+ACEAIQAh- Booyah+ACE- Check out the ball+ACE- It's stuck on the roof+ACE-	+AFs-no+AF0-	Yes, it's is+ACE- Check out the roof.	tellStory 19+AHw-	19
+18	What a disaster+ACEAIQAh- Booyah+ACE- Check out the ball+ACE- It's stuck on the roof+ACE-			tellStory 19+AHw-	19
+19	But how are we going to get it back now?	don't know		tellStory 27+AHw-	27
+19	But how are we going to get it back now?			tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-no+AF0- +AFs-idea+AF0-		tellStory 27+AHw-	27
+19	But how are we going to get it back now?	They will call	Yes, that's a good idea.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	They +AFs-could+AF0- call +ACQ-name	Yes, that's a good idea., they could call +ACQ-name.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-stick+AF0-	Yes, that's a good idea.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-ladder+AF0-	Yes, that's a good idea.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-stool+AF0-	Yes, that's a good idea.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-master+AF0-	 that's a good idea.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-mistress+AF0-	 that's a good idea.	tellStory 27+AHw-	27
+19	But how are we going to get it back now?	+AFs-teacher+AF0-	 that's a good idea.	tellStory 27+AHw-	27
+27	Oh my god+ACE- Look next to the ball+ACE- What for an idea +ACE-?+ACE- He threw up his carrot on the roof+ACE-			tellStory 28+AHw-	28
+27	Oh my god+ACE- Look next to the ball+ACE- What for an idea +ACE-?+ACE- He threw up his carrot on the roof+ACE-	+AFs-yes+AF0-		tellStory 28+AHw-	28
+28	Look at Salim+ACE- He is in stocking feet+ACEAIQ- That's not really clever...			tellStory 29+AHw-	29
+28	Look at Salim+ACE- He is in stocking feet+ACEAIQ- That's not really clever...	+AFs-indeed+AF0-		tellStory 29+AHw-	29
+28	Look at Salim+ACE- He is in stocking feet+ACEAIQ- That's not really clever...	+AFs-yes+AF0-		tellStory 29+AHw-	29
+28	Look at Salim+ACE- He is in stocking feet+ACEAIQ- That's not really clever...	+AFs-right+AF0-		tellStory 29+AHw-	29
+29	I know, it's his carrot which is on the roof, yes+ACEAIQ- Tell me, we call this a carrot, right? 	+AFs-yes+AF0-		tellStory 32+AHw-	32
+29	I know, it's his carrot which is on the roof, yes+ACEAIQ- Tell me, we call this a carrot, right? 	+AFs-sure+AF0-		tellStory 32+AHw-	32
+29	I know, it's his carrot which is on the roof, yes+ACEAIQ- Tell me, we call this a carrot, right? 	+AFs-no+AF0-		tellStory 31+AHw-	31
+29	I know, it's his carrot which is on the roof, yes+ACEAIQ- Tell me, we call this a carrot, right? 	I don't think		tellStory 31+AHw-	31
+29	I know, it's his carrot which is on the roof, yes+ACEAIQ- Tell me, we call this a carrot, right? 			tellStory 31+AHw-	31
+31	 Yes, you are right +ACE- It's not a carrot, but a boot.			tellStory 33+AHw-	33
+31	 Yes, you are right +ACE- It's not a carrot, but a boot.	+AFs-it+AF0-		tellStory 33+AHw-	33
+31	 Yes, you are right +ACE- It's not a carrot, but a boot.	+AFs-yes+AF0-		tellStory 33+AHw-	33
+32	Hum, wait+ACE- We do not call this in that way ?+ACE- Hum, now I remember, it's called a boot.			tellStory 33+AHw-	33
+32	Hum, wait+ACE- We do not call this in that way ?+ACE- Hum, now I remember, it's called a boot.	+AFs-right+AF0-		tellStory 33+AHw-	33
+32	Hum, wait+ACE- We do not call this in that way ?+ACE- Hum, now I remember, it's called a boot.	+AFs-yes+AF0-		tellStory 33+AHw-	33
+33	Yes, that's it. Salim threw up his boot to drop the ball +ACEAIQAh-			tellStory 34+AHw-	34
+34	Duh +ACE- he missed it +ACE- The ball is still stuck and the carro... hem, I mean the boot is also stuck now +ACE-			tellStory 35+AHw-	35

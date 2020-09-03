@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+      <state>
+    <lPatterns>
+      <pattern>dontknow</pattern>
+    </lPatterns>
+    <lAnswers>
+         <answer>_3 on va bien voir</answer>
+    </lAnswers>
+    <lCommands />
+    <next>111</next>
+    </state> 
+    <state>
+    <lPatterns>
+      <pattern>talkinginclass</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_9 Tu crois vraiment, on va bien voir</answer>
+	  <answer>_18 oui je pense que tu as raison</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>111</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>111</next>
+  </state>  
+  <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>111</next>
+  </state>
+</patterns>

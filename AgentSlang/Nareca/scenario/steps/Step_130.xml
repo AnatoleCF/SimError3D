@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+     <state>
+    <lPatterns>
+      <pattern>opinionaboutteacher</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_3 on va bien voir</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>132</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>131</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>131</next>
+  </state>
+</patterns>

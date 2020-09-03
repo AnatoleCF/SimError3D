@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<patterns>
+	<state>
+        <lPatterns>
+            <pattern>#1 Oui c'est bien ça</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#2 Tu crois vraiment, on va bien voir</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#3 on va bien voir !</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#4 On va regarder ensemble</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#5 C'est bien ce que je pense moi aussi</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#6 Ah je suis pas tout à fait sûr</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#7 Ah je ne suis pas tout a fait d'accord</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#8 Allez on continue</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#9 Excuse moi, est ce que tu peux répeter s'il te plait</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#10 Pardon tu as dit quoi?</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#11 je suis d'accord avec toi, on regarde</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+	<state>
+        <lPatterns>
+            <pattern>#12 Ah d'accord</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer></answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>Opattern11</pattern>
+            <pattern>Opattern12</pattern>
+            <pattern>Opattern13</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer>Oanswer11</answer>
+            <answer>Oanswer12</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>Opattern21</pattern>
+            <pattern>Opattern22</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer>Oanswer21</answer>
+            <answer>Oanswer22</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>Opattern21</pattern>
+            <pattern>Opattern31</pattern>
+            <pattern>Opattern32</pattern>
+        </lPatterns>
+        <lAnswers>
+            <answer>Oanswer31</answer>
+            <answer>Oanswer32</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+    <state>
+        <lPatterns>
+            <pattern>wxcvbn</pattern> <!--> This pattern is considered as empty ! for any action no response from child! The audio file should be "DEF+one digit number.wav"<-->
+        </lPatterns>
+        <lAnswers>
+            <answer>*1 Don't be so shy, I am listening to you. :) </answer>
+            <answer>*2 I didn't hear you, please go on !</answer>
+            <answer>*3 tu peux me parler, je peux comprendre beaucoup de chose!</answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+
+    <state>
+        <lPatterns>
+            <pattern>default</pattern> <!--> for any action not understood by agent! The audio file should be "OUT+one digit number.wav"   <-->
+        </lPatterns>
+        <lAnswers>
+            <answer>#1 I am sorry, but I didn't catch what you said. Could you tell it in another way please ?</answer>
+            <answer>#2 I am afraid I didn't understand. Could you rephrase it please ? </answer>
+        </lAnswers>
+        <lCommands/>
+        <next></next>
+    </state>
+
+</patterns>
+

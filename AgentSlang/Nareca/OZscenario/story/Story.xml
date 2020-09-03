@@ -1,0 +1,1597 @@
+<?xml version='1.0' encoding='UTF-8'?>
+  <story> 
+<!-- Step #1 --> 
+	  <state> 
+		 <lCommands> 
+			<command>changeTitle - The Perched Ball -</command> 
+			  <command>displaySlide 1</command> 
+		  </lCommands>
+		  <story></story> 
+	  </state>
+	  
+<!-- Step #2 --> 
+	  <state> 
+		<lCommands> 
+			<command>displaySlide 1</command>
+		</lCommands>
+		<story>Bonjour (??)</story> 
+	  </state>
+
+<!-- Step #3 --> 
+	<state> 
+		<lCommands> 
+			<command>displaySlide 1</command>
+		</lCommands>
+		<story> (??)</story>  
+	</state>
+ 
+<!-- Step #4 --> 
+	<state> 
+		 <lCommands>
+			<!--command>displaySlide 1</command--> 
+		</lCommands> 
+			<story>Bonjour, je m'appelle mary </story>
+	</state>
+ 
+ 
+<!-- Step #5 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>Et toi, comment tu t'appelles (??)</story>
+	</state>
+ 
+ 
+<!-- Step #6 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+			<command>EmotionalAppraisal:0.0,-0.5,0.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Je suis très contente de faire ta connaissance</story>
+	</state>
+ 
+ 
+<!-- Step #7 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>Et dis moi, quel âge est ce que tu as…. (??)</story>
+	</state>
+ 
+ 
+<!-- Step #8 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Ah, mais tu es un grand maintenant.</story>
+	</state>
+ 
+ 
+<!-- Step #9 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>Et dis-moi En quelle classe est ce que tu es (??)</story>
+	</state>
+ 
+ 
+<!-- Step #10 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+			<command>EmotionalAppraisal:0.0,-0.5,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Ah, c’est bien.</story>
+	</state>
+ 
+ 
+<!-- Step #11 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>dis moi, Est-ce que tu serais d’accord pour qu’on lise une histoire ensemble (??)</story>
+	</state>
+ 
+ 
+<!-- Step #12 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+			<command>EmotionalAppraisal:0.0,-0.5,0.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Tu vas voir c’est une histoire  Ça s'apelle Ooouf   Ooouf  erché</story>
+	</state>
+ 
+ 
+<!-- Step #13 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>On y va? (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #14 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>C’est partiiiii  iiiiiiiii</story>
+	</state>
+ 
+ 
+<!-- Step #15 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>bml:Nareca_Pointing_LeMatin</command> 
+		</lCommands> 
+			<story>Tu vois ? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #16 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+		</lCommands> 
+			<story>c’est le matin, tous les enfants arrivent à l’école.</story>
+	</state>
+ 
+ 
+<!-- Step #17 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Ohhhh (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #18 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>bml:Nareca_Pointing_PasContent</command> 
+		</lCommands> 
+			<story>regarde celui-là (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #19 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>EmotionalAppraisal:0.0,1.0,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>il n’a pas du tout l’air content d’être ici!</story>
+	</state>
+ 
+ 
+<!-- Step #20 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>bml:Nareca_Pointing_Salim</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Et là (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #21 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,-0.5,0.0,0.0</command> 
+		</lCommands> 
+			<story>ce petit garçon avec son ballon</story>
+	</state>
+ 
+ 
+<!-- Step #22 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>bml:Nareca_Pointing_Salim</command> 
+		</lCommands> 
+			<story>regarde (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #23 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+		</lCommands> 
+			<story>c’est Salim. </story>
+	</state>
+ 
+ 
+<!-- Step #24 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+		</lCommands> 
+			<story>Il appelle ses copains</story>
+	</state>
+ 
+ 
+<!-- Step #25 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>« Hé les copains, il reste encore un peu de temps avant la sonnerie, qui vient jouer au ballon ? »</story>
+	</state>
+ 
+ 
+<!-- Step #26 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+		</lCommands> 
+			<story>Sébastien et Cindy crient</story>
+	</state>
+ 
+ 
+<!-- Step #27 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 2</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>« moi, moi !!! »</story>
+	</state>
+ 
+ 
+<!-- Step #28 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 3</command> 
+			<command>EmotionalAppraisal:0.5,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Et c’est partiiiii  iiiiiiiii!</story>
+	</state>
+ 
+ 
+<!-- Step #29 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 3</command> 
+			<command>EmotionalAppraisal:0.5,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Le maaaaaatch commeeeeeeeeence</story>
+	</state>
+ 
+ 
+<!-- Step #30 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 3</command> 
+			<command>EmotionalAppraisal:0.5,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Sébastien tire fooooooooort dans le ballon.</story>
+	</state>
+ 
+ 
+<!-- Step #31 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 3</command> 
+			<command>EmotionalAppraisal:0.5,-1.0,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Et  il s’envole trèèèèès haut</story>
+	</state>
+ 
+ 
+<!-- Step #32 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 3</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Oh la la, mais où est ce qu’il va bien pouvoir atterrir le ballon? (??)</story>
+	</state>
+ 
+ 
+<!-- Step #33 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 3</command> 
+		</lCommands> 
+			<story>Est-ce que tu le sais toi (??)</story>
+	</state>
+ 
+ 
+<!-- Step #34 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Catastrophe, Haaa!</story>
+	</state>
+ 
+ 
+<!-- Step #35 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>bml:Nareca_Pointing_BallonBloqué</command> 
+		</lCommands> 
+			<story>Regarde le ballon! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #36 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,1.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>le ballon est bloqué sur le toit du préau. </story>
+	</state>
+ 
+ 
+<!-- Step #37 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Mais comment ils vont faire pour le récupérer maintenant ? (??)</story>
+	</state>
+ 
+ 
+<!-- Step #38 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+		</lCommands> 
+			<story>Tu as une idée (??)</story>
+	</state>
+ 
+ 
+<!-- Step #39 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,1.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Mais, oh lala?</story>
+	</state>
+ 
+ 
+<!-- Step #40 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>bml:Nareca_Pointing_ChaussureBlocqué</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>regarde là à côté du ouf allon ? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #41 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Quelle idée!</story>
+	</state>
+ 
+ 
+<!-- Step #42 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Il a jeté sa botte sur le toit ! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #43 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Ohhhh</story>
+	</state>
+ 
+ 
+<!-- Step #44 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>bml:Nareca_Pointing_ChaussureProblème</command> 
+		</lCommands> 
+			<story> regarde Salim! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #45 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Il est en chaussette!</story>
+	</state>
+ 
+ 
+<!-- Step #46 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story> C’est pas très malin... (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #47 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+		</lCommands> 
+			<story>Est-ce que tu sais pourquoi il a lancé sa botte sur le toit (??)</story>
+	</state>
+ 
+ 
+<!-- Step #48 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>il a lancé sa botte pour faire tomber le ballon!!!</story>
+	</state>
+ 
+ 
+<!-- Step #49 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+		</lCommands> 
+			<story>Est-ce que ça a marché (??)</story>
+	</state>
+ 
+ 
+<!-- Step #50 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Eh bah, c’est loupé!</story>
+	</state>
+ 
+ 
+<!-- Step #51 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Le ballon est toujours bloqué et la botte aussi !</story>
+	</state>
+ 
+ 
+<!-- Step #52 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+		</lCommands> 
+			<story>Ils se demandent</story>
+	</state>
+ 
+ 
+<!-- Step #53 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Oh la la</story>
+	</state>
+ 
+ 
+<!-- Step #54 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 4</command> 
+			<command>EmotionalAppraisal:0.0,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story> comment on va faire pour tout récupérer maintenant? (??)</story>
+	</state>
+ 
+ 
+<!-- Step #55 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 5</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-0.5,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Ah</story>
+	</state>
+ 
+ 
+<!-- Step #56 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 5</command> 
+			<command>bml:Nareca_Pointing_CindyIdée</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-0.5,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Regarde Cindy a une idée : (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #57 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 5</command> 
+		</lCommands> 
+			<story>à ton avis, c'est quoi l'idée de Cindy (??)</story>
+	</state>
+ 
+ 
+<!-- Step #58 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 5</command> 
+		</lCommands> 
+			<story>Elle dit</story>
+	</state>
+ 
+ 
+<!-- Step #59 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 5</command> 
+			<command>EmotionalAppraisal:0.0,0.0,-0.5,-0.5,0.5</command> 
+		</lCommands> 
+			<story>« Je vais faire une boule avec mon écharpe et mon bonnet et je vais tout faire tomber ! ». </story>
+	</state>
+ 
+ 
+<!-- Step #60 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,1.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>ooops L’écharpe est aussi bloquée !</story>
+	</state>
+ 
+ 
+<!-- Step #61 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh bah</story>
+	</state>
+ 
+ 
+<!-- Step #62 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>bml:Nareca_Pointing_SébastienIdée</command> 
+		</lCommands> 
+			<story>regarde! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #63 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Sébastien a une idée lui aussi! </story>
+	</state>
+ 
+ 
+<!-- Step #64 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Il est content et tout fier.</story>
+	</state>
+ 
+ 
+<!-- Step #65 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+		</lCommands> 
+			<story> et Il dit</story>
+	</state>
+ 
+ 
+<!-- Step #66 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>EmotionalAppraisal:0.0,-0.5,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>« Eh bah moi, je vais lancer mon cartable et je suis sûr que tout va tomber ».</story>
+	</state>
+ 
+ 
+<!-- Step #67 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+			<command>EmotionalAppraisal:0.0,-0.5,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Et hop !! </story>
+	</state>
+ 
+ 
+<!-- Step #68 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+		</lCommands> 
+			<story>A ton avis, c’était une bonne idée (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #69 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 6</command> 
+		</lCommands> 
+			<story>on va bien voir!</story>
+	</state>
+ 
+ 
+<!-- Step #70 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 7</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,1.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Catastrooooooophe  Son cartable est aussi sur le toit.</story>
+	</state>
+ 
+ 
+<!-- Step #71 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 7</command> 
+			<command>EmotionalAppraisal:0.0,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Oh Ooooh  Salim, Sébastien et Cyndi sont drôlement embêtés !! </story>
+	</state>
+ 
+ 
+<!-- Step #72 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 7</command> 
+			<command>EmotionalAppraisal:0.0,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story> Comment ils vont faire maintenant ? (??)</story>
+	</state>
+ 
+ 
+<!-- Step #73 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Mince   Ça sonne c’est trop tard   Vite, vite.</story>
+	</state>
+ 
+ 
+<!-- Step #74 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+		</lCommands> 
+			<story>Il faut faire comme les copains et se mettre en rang.</story>
+	</state>
+ 
+ 
+<!-- Step #75 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh!</story>
+	</state>
+ 
+ 
+<!-- Step #76 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>bml:Nareca_Pointing_DrôleTête</command> 
+		</lCommands> 
+			<story>Et puis, regarde (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #77 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,0.0,0.0</command> 
+		</lCommands> 
+			<story>Salim et Sébastien Ils font une drôle de tête </story>
+	</state>
+ 
+ 
+<!-- Step #78 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+		</lCommands> 
+			<story> tu ne trouves pas (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #79 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>bml:Nareca_Pointing_DrôleTête</command> 
+		</lCommands> 
+			<story>Regarde! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #80 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+		</lCommands> 
+			<story>Qu’est ce qu'on voit (??)</story>
+	</state>
+ 
+ 
+<!-- Step #81 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Salim est en chaussette et Sébastien n’a pas son cartable.</story>
+	</state>
+ 
+ 
+<!-- Step #82 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>bml:Nareca_Pointing_FaireSemblant</command> 
+		</lCommands> 
+			<story>et là Sebastien ? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #83 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+		</lCommands> 
+			<story>il fait semblant de faire quoi (??)</story>
+	</state>
+ 
+ 
+<!-- Step #84 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.5,0.5,0.5</command> 
+		</lCommands> 
+			<story> Il fait semblant de porter son caratable !</story>
+	</state>
+ 
+ 
+<!-- Step #85 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>EmotionalAppraisal:0.0,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Si le maître s’en apperçoit  , a ,  ,ils vont se faire punir…</story>
+	</state>
+ 
+ 
+<!-- Step #86 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 8</command> 
+			<command>EmotionalAppraisal:0.0,1.0,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>oh lal J’aimeraaaais pas être à leur place !!</story>
+	</state>
+ 
+ 
+<!-- Step #87 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+		</lCommands> 
+			<story>Les enfants sont dans la classe.</story>
+	</state>
+ 
+ 
+<!-- Step #88 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh ! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #89 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+			<command>bml:Nareca_Pointing_DrôleTêteSalim</command> 
+		</lCommands> 
+			<story>Est-ce que tu a vu, Salim ? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #90 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story> Il fait une drôle de tête</story>
+	</state>
+ 
+ 
+<!-- Step #91 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+		</lCommands> 
+			<story> tu ne trouves pas ? (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #92 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+		</lCommands> 
+			<story>Le maître l’appelle au tableau.</story>
+	</state>
+ 
+ 
+<!-- Step #93 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+			<command>EmotionalAppraisal:0.0,1.0,1.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Aïe Aïe Aïe Mais il est en chaussette</story>
+	</state>
+ 
+ 
+<!-- Step #94 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+		</lCommands> 
+			<story>tu te souviens (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #95 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,1.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Il ne peut quand même pas aller au tableau en chaussette !</story>
+	</state>
+ 
+ 
+<!-- Step #96 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+		</lCommands> 
+			<story>tu le ferais toi (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #97 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 9</command> 
+		</lCommands> 
+			<story>S'il y va  en chaussette, il va se faire disputer ! </story>
+	</state>
+ 
+ 
+<!-- Step #98 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>bml:Nareca_Pointing_PasContent</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>ah mais non, regarde ! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #99 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+		</lCommands> 
+			<story> Il a trouvé des chaussures.</story>
+	</state>
+ 
+ 
+<!-- Step #100 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Ouuuuf Heureusement que Sébastien lui a prêté les siennes.</story>
+	</state>
+ 
+ 
+<!-- Step #101 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>bml:Nareca_Pointing_PasContent</command> 
+		</lCommands> 
+			<story>Mais regarde! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #102 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+		</lCommands> 
+			<story> j'ai l'impression qu'il Ooouf Ooouf avec les chaussures!</story>
+	</state>
+ 
+ 
+<!-- Step #103 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,0.5</command> 
+		</lCommands> 
+			<story>ça n’a pas l’air facile de marcher avec ces chaussures, elles sont trop grandes pour lui… </story>
+	</state>
+ 
+ 
+<!-- Step #104 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>bml:Nareca_Pointing_Séb_tête</command> 
+		</lCommands> 
+			<story>Et Sébastien quelle tête il fait (??)</story>
+	</state>
+ 
+ 
+<!-- Step #105 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,0.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>En tout cas, ça amuse beaucoup Sébastien! </story>
+	</state>
+ 
+ 
+<!-- Step #106 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>bml:Nareca_Pointing_MaitreSurpris</command> 
+		</lCommands> 
+			<story>Et là, le maître, tu a vu? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #107 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 10</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Il a l’air très surpris ! </story>
+	</state>
+ 
+ 
+<!-- Step #108 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+			<command>bml:Nareca_Pointing_SébastienEmbeté</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh regarde! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #109 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+			<command>EmotionalAppraisal:0.0,1.0,-1.0,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Maintenant, c’est Sébastien qui est drôlement embêté ! </story>
+	</state>
+ 
+ 
+<!-- Step #110 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+		</lCommands> 
+			<story>Ah mais qu’est-ce qu’il fait (??)</story>
+	</state>
+ 
+ 
+<!-- Step #111 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+		</lCommands> 
+			<story>Il appelle Cindy</story>
+	</state>
+ 
+ 
+<!-- Step #112 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,-0.5,0.5,0.0</command> 
+		</lCommands> 
+			<story>« Hey Cindy, je t’échange l’écharpe de ma petite seur contre ton stylo. »</story>
+	</state>
+ 
+ 
+<!-- Step #113 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+		</lCommands> 
+			<story>tu es d’accord?</story>
+	</state>
+ 
+ 
+<!-- Step #114 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 11</command> 
+		</lCommands> 
+			<story>tu aurais prêté ton stylo à Sébastien, toi (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #115 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 12</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh!</story>
+	</state>
+ 
+ 
+<!-- Step #116 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 12</command> 
+			<command>bml:Nareca_Pointing_SourireSébastien</command> 
+		</lCommands> 
+			<story>Regarde le sourire de Sébastien! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #117 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 12</command> 
+		</lCommands> 
+			<story>C'est parce que Cindy est d'accord</story>
+	</state>
+ 
+ 
+<!-- Step #118 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 12</command> 
+			<command>EmotionalAppraisal:-0.5,-0.5,-1.0,0.5,0.0</command> 
+		</lCommands> 
+			<story> il a réussi à Ooouf   faire son devoir.</story>
+	</state>
+ 
+ 
+<!-- Step #119 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 12</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,-1.0,0.5,0.0</command> 
+		</lCommands> 
+			<story> Il est content ! Il a vraiment eu chaud ! </story>
+	</state>
+ 
+ 
+<!-- Step #120 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 12</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Et bah maintenant, il ne peut plus rien leur arriver!</story>
+	</state>
+ 
+ 
+<!-- Step #121 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Mais touuut à coup</story>
+	</state>
+ 
+ 
+<!-- Step #122 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.0,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Un énoooooorme bruit dehoooors</story>
+	</state>
+ 
+ 
+<!-- Step #123 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Mais qu’est ce qu’il se passe (??)</story>
+	</state>
+ 
+ 
+<!-- Step #124 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:0.0,0.5,0.0,-0.5,-0.5</command> 
+		</lCommands> 
+			<story> il y a un gros orage dehors ! </story>
+	</state>
+ 
+ 
+<!-- Step #125 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>bml:Nareca_Pointing_BallonBloqué</command> 
+		</lCommands> 
+			<story>Regarde (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #126 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Oh lala!</story>
+	</state>
+ 
+ 
+<!-- Step #127 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story>Les arbres se pliiiient les branches tombent,..  Le vent souffle fooort!</story>
+	</state>
+ 
+ 
+<!-- Step #128 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,0.5</command> 
+		</lCommands> 
+			<story>Et tu as vu toute cette pluie ? (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #129 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 13</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>ooo la, la, j’aimerais pas être dehors par ce temps là !!!! </story>
+	</state>
+ 
+ 
+<!-- Step #130 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 14</command> 
+			<command>bml:Nareca_Pointing_MaîtreChante</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh, bah regarde la tête du maître ? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #131 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 14</command> 
+		</lCommands> 
+			<story> D’après toi Qu’est-ce qu’il fait le maître Est-ce qu'il chante (??)</story>
+	</state>
+ 
+ 
+<!-- Step #132 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 14</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Ah mais non, il ne chante pas  Il est en colère parce que tous les enfants sont trop près de la fenêtre! </story>
+	</state>
+ 
+ 
+<!-- Step #133 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 15</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,-1.0,-0.5,0.0</command> 
+		</lCommands> 
+			<story>Ouiiiiii  Choueeeeee wwweeette  la tempête est finiiiiiiiie</story>
+	</state>
+ 
+ 
+<!-- Step #134 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 15</command> 
+		</lCommands> 
+			<story>les enfants disent : allez on suit tous Salim dehors!</story>
+	</state>
+ 
+ 
+<!-- Step #135 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 15</command> 
+		</lCommands> 
+			<story>Ils sortent dehors </story>
+	</state>
+ 
+ 
+<!-- Step #136 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 15</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh</story>
+	</state>
+ 
+ 
+<!-- Step #137 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 15</command> 
+			<command>bml:Nareca_Pointing_SalimPointer</command> 
+		</lCommands> 
+			<story>regarde Salim!! (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #138 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 15</command> 
+		</lCommands> 
+			<story>Qu’est-ce qu’il  peut bien montre du doigt ? (??)</story>
+	</state>
+ 
+ 
+<!-- Step #139 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Ohwww baaaah oui!</story>
+	</state>
+ 
+ 
+<!-- Step #140 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>bml:Nareca_Pointing_RetrouverBotte</command> 
+		</lCommands> 
+			<story>Tu vois (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #141 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Salim a retrouvé sa botte </story>
+	</state>
+ 
+ 
+<!-- Step #142 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Il est tellement heureux qu’il lui fait un gros bisou</story>
+	</state>
+ 
+ 
+<!-- Step #143 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.0,-0.5,0.0</command> 
+		</lCommands> 
+			<story> piiiiiffiiiiiiiouuuu un bisouuuuus à sa boootte, n’importe quoi</story>
+	</state>
+ 
+ 
+<!-- Step #144 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+		</lCommands> 
+			<story>Est-ce que tu ferais un bisous à ta botte toi (??)</story>
+	</state>
+ 
+ 
+<!-- Step #145 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:0.0,1.0,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>aaah beurk!</story>
+	</state>
+ 
+ 
+<!-- Step #146 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:0.0,0.5,0.0,0.0,0.0</command> 
+		</lCommands> 
+			<story>ça se fait pas quand même!! (?!)</story>
+	</state>
+ 
+ 
+<!-- Step #147 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+		</lCommands> 
+			<story>Et Sébastien</story>
+	</state>
+ 
+ 
+<!-- Step #148 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>bml:Nareca_Pointing_Salim</command> 
+		</lCommands> 
+			<story>Est-ce que tu a vu? (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #149 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Il saute de joie Il a retrouvé son ballon. </story>
+	</state>
+ 
+ 
+<!-- Step #150 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>bml:Nareca_Pointing_Retrouver_écharp</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Regarde là (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #151 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>Cindy est drôlement contente!</story>
+	</state>
+ 
+ 
+<!-- Step #152 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,-1.0,-1.0,0.5,0.5</command> 
+		</lCommands> 
+			<story>elle a retrouvé son écharpe.</story>
+	</state>
+ 
+ 
+<!-- Step #153 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>bml:Nareca_Torso_LeftTurn</command> 
+			<command>EmotionalAppraisal:-0.5,0.0,0.5,0.0,0.0</command> 
+		</lCommands> 
+			<story>Oh ! Oohh !</story>
+	</state>
+ 
+ 
+<!-- Step #154 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>bml:Nareca_Pointing_Retrouver_Cartable</command> 
+		</lCommands> 
+			<story>Regarde le maitre (!!)</story>
+	</state>
+ 
+ 
+<!-- Step #155 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,-0.5,-0.5</command> 
+		</lCommands> 
+			<story> il fait une drôle de tête ! </story>
+	</state>
+ 
+ 
+<!-- Step #156 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:-0.5,0.5,0.5,0.5,0.5</command> 
+		</lCommands> 
+			<story>il a trouvé un cartable dans la cour! </story>
+	</state>
+ 
+ 
+<!-- Step #157 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+		</lCommands> 
+			<story>le maitre se demande bien ce qu'il fait là ce cartable</story>
+	</state>
+ 
+ 
+<!-- Step #158 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 16</command> 
+			<command>EmotionalAppraisal:0.0,-0.5,0.0,0.5,0.0</command> 
+		</lCommands> 
+			<story>C’est le cartable de Sébastien, bien sûr ! </story>
+	</state>
+ 
+ 
+<!-- Step #159 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>Voilà, l’histoire est finie!</story>
+	</state>
+ 
+ 
+<!-- Step #160 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>Tu as aimé cette histoire (??)</story>
+	</state>
+ 
+ 
+<!-- Step #161 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+			<command>EmotionalAppraisal:0.0,-1.0,0.0,0.5,0.0</command> 
+		</lCommands> 
+			<story>Eh bien, j’ai été très contente de passer un moment avec toi ! </story>
+	</state>
+ 
+ 
+<!-- Step #162 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story>Je te remercie beaucoup pour ta participation et je te dis au revoir ! </story>
+	</state>
+ 
+ 
+<!-- Step #163 --> 
+	<state> 
+		 <lCommands>
+			<command>displaySlide 1</command> 
+		</lCommands> 
+			<story> A bientôt.</story>
+	</state>
+ 
+ </story>

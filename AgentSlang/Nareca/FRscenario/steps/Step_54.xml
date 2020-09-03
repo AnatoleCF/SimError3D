@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+     <state>
+    <lPatterns>
+      <pattern>dontknow</pattern>
+     </lPatterns>
+    <lAnswers>
+       <answer>_6 on va regader ensemble</answer>
+   </lAnswers>
+    <lCommands />
+    <next>55</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>accept</pattern>
+    </lPatterns>
+    <lAnswers>
+       <answer>_9 Tu crois vraiment, on va bien voir</answer>
+	   <answer>_6 on va regader ensemble</answer>
+    </lAnswers>
+    <lCommands />
+    <next>55</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>retrieveball</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>_13 ah d'accord</answer>
+	    <answer>_12 je suis d'accord avec toi, on regarde</answer>
+	   <answer>_20 ah peut-être</answer>
+	    </lAnswers>
+    <lCommands />
+    <next>55</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+       <answer>_11 on regarde</answer>
+    </lAnswers>
+    <lCommands />
+    <next>55</next>
+  </state>
+    <state>
+    <lPatterns>
+      <pattern>$defvar</pattern>
+    </lPatterns>
+    <lAnswers>
+    <answer></answer>
+     </lAnswers>
+    <lCommands />
+    <next>55</next>
+  </state> 
+</patterns>

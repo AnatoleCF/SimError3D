@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<story>
+  <state><!-- Step #1 -->
+    <lCommands />
+    <story></story>
+  </state>
+  <state><!-- Step #2 -->
+    <lCommands />
+    <story>Oh Bonjour</story>
+  </state>
+  <state><!-- Step #3 -->
+    <lCommands />
+    <story>Je m'apelle Dominique Lefevre</story>
+  </state>
+</story>

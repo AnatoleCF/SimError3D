@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+    <state>
+		<lPatterns>
+			<pattern>dontknow</pattern>
+		</lPatterns>
+		<lAnswers>
+			<answer>_3 on va bien voir</answer>
+		</lAnswers>
+		<lCommands />
+		<next>84</next>
+    </state> 
+    <state>
+		<lPatterns>
+			<pattern>mimikingbag</pattern>
+		</lPatterns>
+		<lAnswers>
+			<answer>_12 je suis d'accord avec toi, on regarde</answer>
+			<answer>_18 oui je pense que tu as raison</answer>			
+		</lAnswers>
+		<lCommands />
+		<next>84</next>  
+    </state>
+	<state>
+		<lPatterns>
+			<pattern>wxcvbn</pattern>
+		</lPatterns>
+		<lAnswers>
+			<answer></answer>
+		</lAnswers>
+		<lCommands />
+		<next>84</next>
+	</state>
+	<state>
+		<lPatterns>
+			<pattern>$defvar</pattern>
+		</lPatterns>
+		<lAnswers>
+			<answer></answer>
+		</lAnswers>
+		<lCommands />
+		<next>84</next>
+	</state>
+</patterns>

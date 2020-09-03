@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>[No]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Let's take a look at it.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>18</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[yes]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Let's take a look at it.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>18</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[tree]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Let's take a look at it.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>18</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[roof]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, you are right!</answer>
+    </lAnswers>
+    <lCommands />
+    <next>18</next>
+  </state>
+</patterns>

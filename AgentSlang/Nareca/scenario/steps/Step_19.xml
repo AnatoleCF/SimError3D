@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<patterns>
+  <state>
+    <lPatterns>
+      <pattern>don't know</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>wxcvbn</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[no] [idea]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer></answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>They will call</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>They [could] call $name</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, that's a good idea., they could call $name.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[stick]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[ladder]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[stool]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer>Yes, that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[master]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer> that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[mistress]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer> that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+  <state>
+    <lPatterns>
+      <pattern>[teacher]</pattern>
+    </lPatterns>
+    <lAnswers>
+      <answer> that's a good idea.</answer>
+    </lAnswers>
+    <lCommands />
+    <next>20</next>
+  </state>
+</patterns>

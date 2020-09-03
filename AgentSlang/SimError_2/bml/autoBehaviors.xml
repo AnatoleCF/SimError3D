@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+L'AnimatorController du patient de SimError utilise les Triggers suivantes pour changer d'animation :
+  - Yes
+  - No
+  - Talk
+  - Wait
+  - Breathe
+  
+  On utilise une version "simplifiée" des postures BML : la valeur importante est la *stance* qui doit prendre l'une des Triggers ci dessus.
+  -->
+  
+
+
+<AutoBehaviors>
+  <bml id="bml-step-1">
+    <posture
+			  id="Idle"
+        define_as_rest_pose="true"
+        transition=""
+        part="WHOLE"
+        stance="Breathe"
+        facing="_CAMERA"
+        turn_speed="0.89"
+        loop="true"
+        blend_duration="0.4" />
+  </bml>
+  
+  <bml id="bml-step-2">
+    <posture
+			  id="Yes"
+        define_as_rest_pose="false"
+        transition=""
+        part="WHOLE"
+        stance="Yes"
+        facing="_CAMERA"
+        turn_speed="0.89"
+        loop="false"
+        blend_duration="0.4" />
+
+  </bml>
+
+  <bml id="bml-step-3">
+    <posture
+			  id="Talking_arms"
+        define_as_rest_pose="false"
+        transition=""
+        part="WHOLE"
+        stance="Talk"
+        facing="_CAMERA"
+        turn_speed="0.89"
+        loop="false"
+        blend_duration="0.4" />
+
+  </bml>
+
+  <bml id="bml-step-4">
+    <posture
+			  id="Wait"
+        define_as_rest_pose="false"
+        transition=""
+        part="WHOLE"
+        stance="Wait"
+        facing="_CAMERA"
+        turn_speed="0.89"
+        loop="false"
+        blend_duration="0.4" />
+  </bml>
+
+  <bml id="bml-step-5">
+    <posture
+			  id="Idle"
+        define_as_rest_pose="false"
+        transition=""
+        part="WHOLE"
+        stance="Breathe"
+        facing="_CAMERA"
+        turn_speed="0.89"
+        loop="false"
+        blend_duration="0.4" />
+  </bml>
+
+</AutoBehaviors>
