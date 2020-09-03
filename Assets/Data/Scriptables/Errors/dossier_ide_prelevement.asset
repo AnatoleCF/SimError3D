@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: dossier_ide_prelevement
+  m_EditorClassIdentifier: 
+  Number: 27
+  Name: dossier_ide_prelevement
+  Group: 
+  Answers:
+  - "La prise de sang n\u2019est pas prescrite par le m\xE9decin dans le dossier m\xE9dical,
+    il s\u2019agit d\u2019une erreur."
+  - "Il n\u2019y a pas besoin de prescription m\xE9dicale pour une prise de sang."
+  - "Une prise de sang doit toujours \xEAtre r\xE9alis\xE9e \xE0 jeun."
+  CorrectAnswers: 00000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait l'absence de prescription m\xE9dicale
+    de la prise de sang.\n\nL\u2019infirmier est habilit\xE9 \xE0 r\xE9aliser une
+    prise de sang soit en application d\u2019une prescription m\xE9dicale qui, sauf
+    urgence, est \xE9crite, dat\xE9e et sign\xE9e par le m\xE9decin."
+  ExplanationNonError: "Rien \xE0 signaler."

@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: prescription_identites
+  m_EditorClassIdentifier: 
+  Number: 28
+  Name: prescription_identites
+  Group: Medicament
+  Answers:
+  - "Cette prescription n\u2019est pas conforme, il manque l\u2019identit\xE9 du prescripteur
+    et l\u2019identit\xE9 du patient (nom et pr\xE9nom)."
+  - "Cette prescription n\u2019est pas conforme il manque : l\u2019\xE2ge, le sexe
+    et le poids du patient."
+  - "Cette prescription n\u2019est pas conforme il manque le nom de sp\xE9cialit\xE9
+    du m\xE9dicament."
+  CorrectAnswers: 00000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait que la prescription n'est pas
+    conforme puisqu'il manque l'identit\xE9 du patient et l'identit\xE9 du prescripteur.\n\nLa
+    prescription doit comporter  :\n\n- le nom et pr\xE9nom du patient, son sexe et
+    sa date de naissance\n- si n\xE9cessaire, son poids et sa surface corporelle\n-
+    le cas \xE9ch\xE9ant, la mention d\u2019une grossesse ou d\u2019un allaitement,
+    ou d'une allergie, ou d'un \xE9tat pathologique (insuffisance h\xE9patique ou
+    r\xE9nale), ou d\u2019un autre traitement\n- la qualit\xE9, le nom et la signature
+    du prescripteur (qui peut \xEAtre \xE9lectronique)\n- l\u2019identification de
+    l\u2019unit\xE9 de soins\n- la date et l\u2019heure de la prescription\n- la d\xE9nomination
+    commune du m\xE9dicament, son dosage et sa forme pharmaceutique\n- la voie d\u2019administration\n-
+    la dose par prise et par 24 heures\n- le rythme ou les horaires de l\u2019administration
+    suivant les cas\n- pour les injectables, les modalit\xE9s de dilution, la vitesse
+    et la dur\xE9e de perfusion, en clair ou par r\xE9f\xE9rence \xE0 un protocole
+    pr\xE9\xE9tabli\n- la dur\xE9e de traitement, lorsque celle-ci est connue \xE0
+    l\u2019avance ou fix\xE9e par la r\xE9glementation"
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLa prescription
+    doit comporter  :\n\n- le nom et pr\xE9nom du patient, son sexe et sa date de
+    naissance\n- si n\xE9cessaire, son poids et sa surface corporelle\n- le cas \xE9ch\xE9ant,
+    la mention d\u2019une grossesse ou d\u2019un allaitement, ou d'une allergie, ou
+    d'un \xE9tat pathologique (insuffisance h\xE9patique ou r\xE9nale), ou d\u2019un
+    autre traitement\n- la qualit\xE9, le nom et la signature du prescripteur (qui
+    peut \xEAtre \xE9lectronique)\n- l\u2019identification de l\u2019unit\xE9 de soins\n-
+    la date et l\u2019heure de la prescription\n- la d\xE9nomination commune du m\xE9dicament,
+    son dosage et sa forme pharmaceutique\n- la voie d\u2019administration\n- la dose
+    par prise et par 24 heures\n- le rythme ou les horaires de l\u2019administration
+    suivant les cas\n- pour les injectables, les modalit\xE9s de dilution, la vitesse
+    et la dur\xE9e de perfusion, en clair ou par r\xE9f\xE9rence \xE0 un protocole
+    pr\xE9\xE9tabli\n- la dur\xE9e de traitement, lorsque celle-ci est connue \xE0
+    l\u2019avance ou fix\xE9e par la r\xE9glementation"

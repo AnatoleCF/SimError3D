@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: chlorhexidine_alcoolique
+  m_EditorClassIdentifier: 
+  Number: 17
+  Name: chlorhexidine_alcoolique
+  Group: Hygiene
+  Answers:
+  - "La validit\xE9 de conservation de la Chlorhexidine alcoolique est de 1 mois apr\xE8s
+    ouverture."
+  - "La validit\xE9 de conservation de la Chlorhexidine alcoolique est de 3 mois apr\xE8s
+    ouverture."
+  - "Ce flacon est p\xE9rim\xE9, il doit \xEAtre remplac\xE9."
+  CorrectAnswers: 0000000002000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait la p\xE9remption du flacon de
+    chlorhexidine alcoolique.\n\nLa validit\xE9 de conservation de la Chlorhexidine
+    alcoolique est de 1 mois apr\xE8s ouverture. Il est important de bien penser \xE0
+    noter date d\u2019ouverture sur le flacon entam\xE9."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLe flacon de
+    chlorhexidine alcoolique est conforme (non p\xE9rim\xE9 + ouverture < 1 mois).\n\nIl
+    est recommand\xE9 pour l'antisepsie avant un acte invasif de bas niveau de risque
+    infectieux, comme les pr\xE9l\xE8vements sanguins (hors h\xE9moculture), d'utiliser
+    un antiseptique alcoolique.\n\r\nLa validit\xE9 de conservation de la Chlorhexidine
+    alcoolique est de 1 mois apr\xE8s ouverture. Il est important de bien penser \xE0
+    noter la date d\u2019ouverture sur le flacon entam\xE9.\n        "

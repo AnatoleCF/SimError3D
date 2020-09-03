@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: dossier_ide_calcul
+  m_EditorClassIdentifier: 
+  Number: 26
+  Name: dossier_ide_calcul
+  Group: Medicament
+  Answers:
+  - Le calcul de dose est correct.
+  - "L'infirmi\xE8re s'appr\xEAte \xE0 administrer trop de gouttes de Tiapridal au
+    patient."
+  - "L'infirmi\xE8re ne va pas administrer assez de gouttes de Tiapridal au patient."
+  CorrectAnswers: 01000000
+  ExplanationError: "Il y a une erreur dans le calcul de dose.\n\nUne goutte de Tiapridal
+    \xE9quivaut \xE0 5mg (\xE9crit dans la prescription). Il faut donc administrer
+    10 gouttes de Tiapridal pour faire 50mg et non 50 gouttes. Si l'infirmi\xE8re
+    administre 50 gouttes, le patient va recevoir 250mg de Tiapridal.\n\nIl risque
+    donc d'\xEAtre en surdosage et de pr\xE9senter des effets ind\xE9sirables : somnolence,
+    s\xE9dation, coma, hypotension et sympt\xF4mes extrapyramidaux."
+  ExplanationNonError: "Rien \xE0 signaler."

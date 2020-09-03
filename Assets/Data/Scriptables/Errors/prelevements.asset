@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: prelevements
+  m_EditorClassIdentifier: 
+  Number: 3
+  Name: prelevements
+  Group: Identitovigilance
+  Answers:
+  - "Les tubes de pr\xE9l\xE8vements vides ne devraient pas \xEAtre \xE9tiquet\xE9s."
+  - "L\u2019erreur concerne l\u2019identit\xE9 du patient."
+  - "Les tubes de pr\xE9l\xE8vements sont toujours interdits dans la chambre d\u2019un
+    patient."
+  CorrectAnswers: 00000000
+  ExplanationError: "L\u2019erreur \xE0 trouver \xE9tait que les tubes vides \xE9taient
+    d\xE9j\xE0 \xE9tiquet\xE9s.\n\r\nR\xE8glementairement, les tubes de pr\xE9l\xE8vement
+    doivent \xEAtre \xE9tiquet\xE9s au lit du patient apr\xE8s remplissage du tube
+    et v\xE9rification de l'identit\xE9 du patient."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLes tubes de
+    pr\xE9l\xE8vement vides ne sont pas \xE9tiquet\xE9s avec une \xE9tiquette patient.\n\r\nR\xE8glementairement,
+    les tubes de pr\xE9l\xE8vement doivent \xEAtre \xE9tiquet\xE9s au lit du patient
+    apr\xE8s remplissage du tube et v\xE9rification de l'identit\xE9 du patient."

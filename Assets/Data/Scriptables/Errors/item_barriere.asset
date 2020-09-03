@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: item_barriere
+  m_EditorClassIdentifier: 
+  Number: 9
+  Name: barriere
+  Group: Bientraitance
+  Answers:
+  - "Les barri\xE8res de lit relev\xE9es n\xE9cessitent une prescription m\xE9dicale."
+  - "Les barri\xE8res de lit relev\xE9es constituent une contention physique passive."
+  - "Pour ce patient les barri\xE8res de lit ne devraient pas \xEAtre relev\xE9es."
+  CorrectAnswers: 000000000100000002000000
+  ExplanationError: "Les barri\xE8res de lit relev\xE9es en l\u2019absence de prescription
+    m\xE9dicale dans le dossier constitue une erreur.\n\nLes barri\xE8res de lit relev\xE9es
+    constituent une forme de contention passive pour le patient, puisqu\u2019il n\u2019est
+    plus libre de quitter son lit sans une aide ext\xE9rieure. Pour relever les barri\xE8res,
+    il est donc n\xE9cessaire que le patient et ses proches soient inform\xE9s de
+    cette mesure, qu\u2019une prescription m\xE9dicale soit r\xE9dig\xE9e. Cela doit
+    \xE9galement s\u2019accompagner d\u2019une surveillance accrue du patient et de
+    la r\xE9\xE9valuation r\xE9guli\xE8re de cette mesure.\n\nL\u2019absence de prescription
+    peut \xEAtre consid\xE9r\xE9e comme une forme de maltraitance envers le patient."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLes barri\xE8res
+    de lit ne sont pas relev\xE9es et celles-ci ne sont pas prescrites par le m\xE9decin.\n\nLes
+    barri\xE8res de lit relev\xE9es n\xE9cessitent une prescription m\xE9dicale motiv\xE9e,
+    l\u2019information du patient et de ses proches, une surveillance et une \xE9valuation
+    fr\xE9quente de la s\xE9curit\xE9 du patient et de l\u2019efficacit\xE9 de cette
+    mesure sont \xE0 r\xE9aliser.\n\r\nL\u2019absence de cela peut \xEAtre consid\xE9r\xE9e
+    comme une forme de maltraitance envers le patient."

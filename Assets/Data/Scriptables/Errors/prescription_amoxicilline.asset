@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: prescription_amoxicilline
+  m_EditorClassIdentifier: 
+  Number: 23
+  Name: prescription_amoxicilline
+  Group: Medicament
+  Answers:
+  - "Il n'existe pas de v\xE9ritable allergie \xE0 l'amoxicilline."
+  - Les notions d'allergie doivent figurer dans le dossier patient.
+  - "L\u2019Amoxicilline/Acide clavulanique n\u2019est pas adapt\xE9 pour ce patient
+    du fait d\u2019une allergie \xE0 l\u2019Amoxicilline not\xE9e dans le dossier
+    m\xE9dical."
+  CorrectAnswers: 0100000002000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait la prescription d'amoxicilline
+    alors que le patient est allergique.\n\r\nCe patient est allergique \xE0 l\u2019amoxicilline,
+    comme indiqu\xE9 dans son dossier m\xE9dical.\n\nLa prescription d\u2019amoxicilline/acide
+    clavulanique pourrait d\xE9clencher une r\xE9action allergique pouvant se compliquer
+    et mener \xE0 une anaphylaxie (r\xE9action allergique rare, mais qui provoque
+    le dysfonctionnement g\xE9n\xE9ralis\xE9 de plusieurs syst\xE8mes du corps et
+    peut conduire au d\xE9c\xE8s).\n\nUn changement d\u2019antibioth\xE9rapie est
+    n\xE9cessaire pour ce patient."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLa ligne de
+    prescription est conforme et le patient n'est pas allergique."

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: chlorhexidine_aqueuse
+  m_EditorClassIdentifier: 
+  Number: 18
+  Name: chlorhexidine_aqueuse
+  Group: Hygiene
+  Answers:
+  - "On doit r\xE9aliser l'antisepsie avec un antiseptique <b>aqueux</b> avant un
+    pr\xE9l\xE8vement sanguin."
+  - "On doit r\xE9aliser l'antiseptie avec un antispetique <b>alcoolique</b> avant
+    un pr\xE9l\xE8vement sanguin"
+  - "Ce flacon est p\xE9rim\xE9, il doit \xEAtre remplac\xE9."
+  CorrectAnswers: 01000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait la pr\xE9sence d'antiseptique
+    aqueux et non alcoolique pour la pr\xE9paration cutan\xE9e avant le pr\xE9l\xE8vement
+    veineux.\n\nLa solutions aqueuse de chlorhexidine pr\xE9sente une activit\xE9
+    bact\xE9ricide insuffisante et ne doit donc pas \xEAtre utilis\xE9e pour l'antisepsie.\n\nIl
+    est recommand\xE9 pour l'antisepsie avant un acte invasif de bas niveau de risque
+    infectieux, comme les pr\xE9l\xE8vements sanguins (hors h\xE9moculture), d'utiliser
+    un antiseptique alcoolique."
+  ExplanationNonError: "Rien \xE0 signaler."

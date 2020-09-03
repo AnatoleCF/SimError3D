@@ -1,0 +1,280 @@
+fileFormatVersion: 2
+guid: d81b89f8f531e5f41854234aa0cfea76
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BalconZone
+    second: {fileID: 2100000, guid: 06c9cdb26c0ce5c4383d77fc5d06ee96, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ceramique Blanche
+    second: {fileID: 2100000, guid: e3a578ec84d191a4fa5d033b307bc3fb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ChambreSolRoof
+    second: {fileID: 2100000, guid: 65c50aaeec43ee0448f88e2f7c87d44e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clavier
+    second: {fileID: 2100000, guid: 152e17db2ac3c394eabc8052583886b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Ecran
+    second: {fileID: 2100000, guid: 6f7388873fae5d44d984f41da333d839, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LIGHT
+    second: {fileID: 2100000, guid: f1901849ed53b5b43bea732721bb7468, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal Gris
+    second: {fileID: 2100000, guid: 7578bcc1dab04b74e86060f48c16382a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MurChambre
+    second: {fileID: 2100000, guid: e31eabe61eeec084cb8acca1e56588b3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: f670c2fc040f546458c09357cd5e0135, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PIPI
+    second: {fileID: 2100000, guid: 18f16868520318f42b9d5fea2fbed3b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic Gris
+    second: {fileID: 2100000, guid: 555332be26bb5834eb51582dffc84568, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic bleu
+    second: {fileID: 2100000, guid: 47208476efecffc4aa6b6d471931e4bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic bleu canard
+    second: {fileID: 2100000, guid: 1590d2d211c69c946b4c224f788264bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic noir
+    second: {fileID: 2100000, guid: c222fd26d28c3bb4b9bd55c611b4246b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic-Blanc
+    second: {fileID: 2100000, guid: 6239145dd28a6e04982a324fff3e1d88, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PropsOK
+    second: {fileID: 2100000, guid: 2c1f5eb7e8a125d419b1a39c5a36cb6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SDB MursSolRoof
+    second: {fileID: 2100000, guid: 2d8fe0e07687bd54299889ba6af4fa66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sang
+    second: {fileID: 2100000, guid: f794450b9af0928428800695d76d649e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Snake plant
+    second: {fileID: 2100000, guid: 266e30eab658ae84aaf7648544363ecf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soil1
+    second: {fileID: 2100000, guid: a71ad161f8b4ab3439c74a11e1c4a552, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Verre
+    second: {fileID: 2100000, guid: 548e14c871480de4999bbe4d64b334a2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vitre
+    second: {fileID: 2100000, guid: 1f73462dfacb23646987aca8a8d8c19d, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BalconZone_ALPHA
+    second: {fileID: 2800000, guid: 43551ff876f9ee444a5361cdf799eef7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BalconZone_DIFF
+    second: {fileID: 2800000, guid: 134542837d45f39478721dca5db48e01, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ChambreSolRoof_DIFF
+    second: {fileID: 2800000, guid: e340862fa1b06084e81843f8b9dfd95c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Clavier
+    second: {fileID: 2800000, guid: 32ed99308c98e494db494ec79e574938, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ECRAN
+    second: {fileID: 2800000, guid: fe5df85d7804bed44b8319833ebc8601, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_DIFF
+    second: {fileID: 2800000, guid: a1494ea263bffa14488df4e51d78bad5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_NRM
+    second: {fileID: 2800000, guid: b1d2f4495d2742246a7ec82d69f653ce, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Metal_SPEC
+    second: {fileID: 2800000, guid: 8fb7e471180a6c54e8ed7a92e7a5456e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MurChambre_DIFF
+    second: {fileID: 2800000, guid: 809ecdc6a3e25cd43853f1a29103f2f9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: PROPS-ok_DIFF
+    second: {fileID: 2800000, guid: 8c2417d5543a24242b85e072d49ac43b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Plastic-Blanc_DIFF
+    second: {fileID: 2800000, guid: b145f8b8c8eb2bd4e954d434dc20fb21, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: SDB MursSolRoof_DIFF
+    second: {fileID: 2800000, guid: 8d388f2bb76ae6047addf49000620224, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Snake plant COL
+    second: {fileID: 2800000, guid: d63f312412e24df448c510ea1e36fbff, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soil1 COL
+    second: {fileID: 2800000, guid: 0f9b938edc7aff04cbfb4e27b2c00a37, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Soil1 N
+    second: {fileID: 2800000, guid: e4215b6e791a669478cdb644619a83c3, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

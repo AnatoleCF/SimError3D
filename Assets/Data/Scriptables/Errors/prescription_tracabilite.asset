@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: prescription_tracabilite
+  m_EditorClassIdentifier: 
+  Number: 29
+  Name: prescription_tracabilite
+  Group: Medicament
+  Answers:
+  - "Il n'est pas n\xE9cessaire d'effectuer la tra\xE7abilit\xE9 de l'administration
+    des m\xE9dicaments."
+  - "L'erreur est que l'administration des m\xE9dicaments n'est pas trac\xE9e sur
+    la prescription."
+  - "Il est pr\xE9f\xE9rable d'utiliser un support de prescription permettant \xE9galement
+    la tra\xE7abilit\xE9 de l'administration."
+  CorrectAnswers: 0100000002000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait l'absence de tra\xE7abilit\xE9
+    de l'administration des m\xE9dicaments.\n\nLa tra\xE7abilit\xE9 de l'administration
+    des m\xE9dicaments doit se faire en temps r\xE9el sur le support de prescription
+    avec la date et l'heure d'administration et le nom de l\u2019IDE qui a administr\xE9
+    le m\xE9dicament.\n\nIl convient d\u2019utiliser un support qui permette d\u2019avoir
+    la prescription et la tra\xE7abilit\xE9 de l\u2019administration sur un m\xEAme
+    document afin d'\xE9viter les erreurs li\xE9es \xE0 une retranscription.\n\nLa
+    non administration doit \xE9galement \xEAtre trac\xE9e avec son motif."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLa tra\xE7abilit\xE9
+    de l'administration des m\xE9dicaments a \xE9t\xE9 correctement effectu\xE9e."

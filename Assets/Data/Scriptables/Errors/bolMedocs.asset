@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: bolMedocs
+  m_EditorClassIdentifier: 
+  Number: 11
+  Name: bolMedocs
+  Group: Medicaments
+  Answers:
+  - "Tout m\xE9dicament doit pouvoir \xEAtre identifiable jusqu\u2019\xE0 son administration
+    selon les bonnes pratiques de pr\xE9paration des m\xE9dicaments."
+  - "Dans le cas o\xF9 le m\xE9dicament ne se pr\xE9sente pas en conditionnement unitaire,
+    il est possible de sur\xE9tiqueter ou de surconditionner le m\xE9dicament avec
+    l\u2019ensemble des informations n\xE9cessaires."
+  - "L\u2019erreur ici est que le m\xE9dicament n\u2019est pas identifiable."
+  CorrectAnswers: 000000000100000002000000
+  ExplanationError: "La pr\xE9sence de m\xE9dicaments non identifiables sur la table
+    de chevet (m\xE9dicaments d\xE9blist\xE9ris\xE9s en vrac dans un r\xE9cipient)
+    \xE9tait l\u2019erreur \xE0 trouver.\n\nLes bonnes pratiques de pr\xE9paration
+    des m\xE9dicaments exigent que le m\xE9dicament soit identifiable jusqu'\xE0 l'administration
+    du m\xE9dicament.\n\nCela suppose une d\xE9coupe des blisters pour voir le nom
+    de sp\xE9cialit\xE9, la DCI (<b>D</b>\xE9nomination <b>C</b>ommune <b>I</b>nternationale),
+    le dosage, le num\xE9ro de lot de la sp\xE9cialit\xE9 et la date de p\xE9remption.\n\nSi
+    cela n'est pas possible au vu du conditionnement, le blister ne doit pas \xEAtre
+    d\xE9coup\xE9 et le m\xE9dicament doit \xEAtre plac\xE9 dans un sachet avec l'ensemble
+    des informations n\xE9cessaires."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici."

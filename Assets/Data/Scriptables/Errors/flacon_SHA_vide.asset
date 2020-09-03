@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: flacon_SHA_vide
+  m_EditorClassIdentifier: 
+  Number: 21
+  Name: flacon_SHA_vide
+  Group: Hygiene
+  Answers:
+  - "Le flacon de SHA est p\xE9rim\xE9, il doit \xEAtre remplac\xE9."
+  - "Le flacon de SHA est vide, il doit \xEAtre remplac\xE9."
+  - "La dur\xE9e de conservation d\u2019un flacon de SHA apr\xE8s ouverture est d\xE9finie
+    par le fabriquant et est toujours inf\xE9rieure \xE0 12 mois."
+  - "Le SHA est essentiel dans la pr\xE9vention contre les des infections associ\xE9es
+    aux soins."
+  CorrectAnswers: 010000000200000003000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait que le flacon de SHA etait vide.
+    Il est fortement recommand\xE9 que les Solutions Hydro-Alcooliques soient disponibles
+    \xE0 port\xE9e de mains imm\xE9diate lors des soins. Dans les situations o\xF9
+    la pr\xE9sence de SHA peut repr\xE9senter un risque (service d'addictologie),
+    les soignants peuvent utiliser des flacons de poches. Un flacon de SHA doit toujours
+    \xEAtre disponible dans la chambre des patients, facilement accessible aux soignants,
+    \xE0 proximit\xE9 imm\xE9diate ou au lit du malade, \xE0 tout moment lors des
+    soins (sauf exceptions comme les services d'addictologie). Il est fortement recommand\xE9
+    d\u2019effectuer une friction hydro-alcoolique :\n- \xE0 l'entr\xE9e et \xE0 la
+    sortie de la chambre\n- entre deux soins\n- entre deux patients d'une m\xEAme
+    chambre\n- avant et apr\xE8s le port de gants\n- imm\xE9diatement avant tout contact
+    direct avec un patient\n- imm\xE9diatement avant tout soin propre ou tout acte
+    invasif\n- entre un soin contaminant et un soin propre ou un acte invasif chez
+    un m\xEAme patient\n- apr\xE8s le dernier contact direct ou soin aupr\xE8s d\u2019un
+    patient\n- apr\xE8s contact avec l\u2019environnement imm\xE9diat du patient\n-
+    apr\xE8s tout contact avec des liquides biologiques imm\xE9diatement apr\xE8s
+    avoir retir\xE9 les gants (\xE0 d\xE9faut, si pas d\u2019usage de gants, apr\xE8s
+    un lavage au savon doux)\r\n- avant d\u2019enfiler des gants pour un soin\n- imm\xE9diatement
+    apr\xE8s le retrait des gants de soins.\n\r\nIl est important de noter la date
+    d\u2019ouverture sur le flacon de SHA (p\xE9remption apr\xE8s 6 mois d'ouverture
+    en g\xE9n\xE9ral, \xE0 confirmer aupr\xE8s du fournisseur)."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nUn flacon de
+    SHA doit toujours \xEAtre disponible dans la chambre du patient.\n\nLe flacon
+    de SHA est bien conforme (plein et non p\xE9rim\xE9).\n\nIl est important de noter
+    la date d\u2019ouverture sur le flacon de SHA (p\xE9remption apr\xE8s 6 mois d\u2019ouverture
+    pour la plupart des fournisseurs \xE0 confirmer aupr\xE8s de chaque laboratoire)."

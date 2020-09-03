@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: bracelet
+  m_EditorClassIdentifier: 
+  Number: 1
+  Name: bracelet
+  Group: Identitovigilance
+  Answers:
+  - "Il y a une erreur d\u2019identitovigilance."
+  - "Le nom de famille et la date de naissance sur le bracelet d'identitovigilance
+    sont erron\xE9s."
+  - "Le nom de famille et le sexe du patient sur le bracelet d'identitovigilance sont
+    erron\xE9s."
+  - "Il n\u2019y a plus besoin de mettre un bracelet d\u2019identitovigilance aux
+    patients."
+  CorrectAnswers: 0000000001000000
+  ExplanationError: "L\u2019erreur \xE0 trouver \xE9tait que l\u2019\xE9tiquette pr\xE9sente
+    sur le bracelet d\u2019identitovigilance n'\xE9tait pas correcte (erreur nom de
+    famille + erreur date de naissance) : l'identit\xE9 du dossier patient correspond
+    \xE0 une identit\xE9 v\xE9rifi\xE9e par une pi\xE8ce justificative d'identit\xE9
+    lors de l'admission du patient.\n\nUne identit\xE9 correcte est compos\xE9e au
+    minimum de 5 traits stricts: nom de naissance (nom de famille), nom d'usage (nom
+    marital), pr\xE9nom, date de naissance, sexe.\n\nTout au long de la prise en charge
+    du patient, l\u2019identit\xE9 doit \xEAtre contr\xF4l\xE9e\_: par la pr\xE9sentation
+    d\u2019une pi\xE8ce d\u2019identit\xE9 avec photo valide \xE0 l\u2019entr\xE9e
+    du patient, par le port du bracelet d\u2019identification par le patient, par
+    la v\xE9rification de l\u2019identit\xE9 par les professionnels de sant\xE9 avant
+    chaque acte par une question ouverte et la v\xE9rification du bracelet).\n\r\nLes
+    \xE9l\xE9ments d\u2019identification du patient doivent \xEAtre strictement identiques
+    sur les diff\xE9rentes pi\xE8ces du dossier patient.\n\r\nL'identit\xE9 du patient
+    dans la chambre peut \xEAtre retrouv\xE9e :\n- Par une question ouverte au patient\r\n-
+    Sur le bracelet d'identitovigilance\n- Dans le dossier patient\n- Sur l'\xE9tiquette
+    du pilulier"
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici. Il s'agit bien
+    du bon patient.\n\nL'identit\xE9 du dossier patient correspond \xE0 une identit\xE9
+    v\xE9rifi\xE9e par une pi\xE8ce justificative d'identit\xE9 lors de l'admission
+    du patient.\n\nUne identit\xE9 correcte est compos\xE9e au minimum de 5 traits
+    stricts: nom de naissance (nom de famille), nom d'usage (nom marital), pr\xE9nom,
+    date de naissance, sexe.\n\r\nTout au long de la prise en charge du patient, l\u2019identit\xE9
+    doit \xEAtre contr\xF4l\xE9e\_: par la pr\xE9sentation d\u2019une pi\xE8ce d\u2019identit\xE9
+    avec photo valide \xE0 l\u2019entr\xE9e du patient, par le port du bracelet d\u2019identification
+    par le patient, par la v\xE9rification de l\u2019identit\xE9 par les professionnels
+    de sant\xE9 avant chaque acte par une question ouverte et la v\xE9rification du
+    bracelet).\n\nLes \xE9l\xE9ments d\u2019identification du patient doivent \xEAtre
+    strictement identiques sur les diff\xE9rentes pi\xE8ces du dossier patient."

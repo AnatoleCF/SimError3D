@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: cheveux_infirmiere
+  m_EditorClassIdentifier: 
+  Number: 22
+  Name: cheveux_infirmiere
+  Group: Hygiene
+  Answers:
+  - "L'infirmi\xE8re doit porter une charlotte."
+  - "Pour r\xE9pondre aux bonnes pratiques d\u2019hygi\xE8ne, l\u2019infirmi\xE8re
+    doit s\u2019attacher les cheveux."
+  - "C\u2019est une obligation r\xE9glementaire."
+  CorrectAnswers: 01000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait que l'IDE avait les cheveux longs
+    d\xE9tach\xE9s.\n\nPar mesure d\u2019hygi\xE8ne, il est conseill\xE9 aux soignants
+    de s\u2019attacher les cheveux lorsqu'ils sont longs.\n\nUne tenue de travail
+    appropri\xE9e \xE0 l'activit\xE9 de soins a pour objectifs d'assurer une protection
+    des professionnels des \xE9tablissements de sant\xE9 au cours de leurs activit\xE9s
+    et de pr\xE9venir la transmission crois\xE9e de micro-organismes."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nL'IDE porte
+    ses cheveux attach\xE9s comme il l'est recommand\xE9 par mesure d'hygi\xE8ne.\n\nUne
+    tenue de travail appropri\xE9e \xE0 l'activit\xE9 de soins a pour objectifs d'assurer
+    une protection des professionnels des \xE9tablissements de sant\xE9 au cours de
+    leurs activit\xE9s et de pr\xE9venir la transmission crois\xE9e de micro-organismes."

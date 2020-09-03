@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: 3_Intrus
+  m_EditorClassIdentifier: 
+  Number: 3
+  Name: Le cube incognito
+  Group: Intrus
+  Answers:
+  - C'est un intrus.
+  - "C'est totalement \xE0 sa place."
+  - "La couleur devrait \xEAtre plus claire"
+  CorrectAnswers: 00000000
+  ExplanationError: C'est un intrus ! Un cube n'est pas une sphere.
+  ExplanationNonError: "Ceci \xE9tait bien un cube."

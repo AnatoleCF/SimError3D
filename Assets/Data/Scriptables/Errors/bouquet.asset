@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: bouquet
+  m_EditorClassIdentifier: 
+  Number: 16
+  Name: bouquet
+  Group: Hygiene
+  Answers:
+  - "Dans certains cas il est d\xE9conseill\xE9 de laisser des fleurs en bouquets
+    dans une chambre d\u2019h\xF4pital."
+  - "Les bouquets de fleurs et les fleurs en pot peuvent constituer un risque potentiel
+    de contamination (germes/bact\xE9ries)."
+  - "Les bouquets de fleurs et les fleurs en pot sont toujours interdites dans tous
+    les h\xF4pitaux."
+  CorrectAnswers: 0000000001000000
+  ExplanationError: "La pr\xE9sence d'un bouquet de fleurs ou d'une plante en pot
+    dans la chambre du patient est une erreur possible.\n\nLes fleurs en bouquets
+    et les fleurs en pot sont d\xE9conseill\xE9es et parfois interdites dans les chambres
+    des patients \xE0 l\u2019h\xF4pital. Il peut y avoir un risque d'infection notamment
+    pour les patients les plus fragiles car elles sont des  r\xE9servoirs \xE0 germes
+    et \xE0 bact\xE9ries (patients immunod\xE9prim\xE9s)."
+  ExplanationNonError: "Rien \xE0 signaler"

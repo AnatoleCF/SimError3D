@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: 4_Cubisto
+  m_EditorClassIdentifier: 
+  Number: 4
+  Name: Cubisto
+  Group: Cubistes
+  Answers:
+  - C'est de bonne taille.
+  - Ceci ne devrait  pas avoir de bords arrondis.
+  - Ceci ne doit jamais toucher le sol.
+  CorrectAnswers: 000000000100000002000000
+  ExplanationError: "C'est \xE0 la bonne taille, mais n\xE9anmoins doit \xEAtre bien
+    cubique. Ceci ne doit pas toucher le sol (bien que ce ne soit pas le cas ici)."
+  ExplanationNonError: Cet objet est en bonne forme.

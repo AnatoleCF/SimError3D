@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: pilulier_quotidien
+  m_EditorClassIdentifier: 
+  Number: 12
+  Name: pilulier_quotidien
+  Group: Medicaments
+  Answers:
+  - "Il y a pr\xE9sence de m\xE9dicaments p\xE9rim\xE9s."
+  - "Il est important de d\xE9finir un environnement adapt\xE9 et d\xE9di\xE9 \xE0
+    la pr\xE9paration des piluliers et de mettre en place une organisation permettant
+    de favoriser la concentration sur la t\xE2che et de limiter les interruptions
+    de t\xE2ches."
+  - "La v\xE9rification des p\xE9rim\xE9s est \xE0 r\xE9aliser \xE0 intervalle r\xE9gulier
+    et d\xE9fini dans chacun des lieux de stockage des m\xE9dicaments."
+  CorrectAnswers: 000000000100000002000000
+  ExplanationError: "La pr\xE9sence de m\xE9dicaments p\xE9rim\xE9s dans le pilulier
+    \xE9tait l\u2019erreur \xE0 trouver.\n\nLa v\xE9rification des p\xE9rim\xE9s est
+    \xE0 r\xE9aliser \xE0 intervalle r\xE9gulier et d\xE9fini dans chacun des lieux
+    de stockage des m\xE9dicaments.\n\n\rLes recommandations pr\xE9conisent de d\xE9finir
+    un environnement adapt\xE9 et d\xE9di\xE9 \xE0 la pr\xE9paration des piluliers.
+    S\u2019il n\u2019est pas possible de mettre en place une zone d\xE9di\xE9e, mettre
+    en place une organisation qui permet de limiter les interruptions de t\xE2ches
+    :\n\r\n- transfert des appels t\xE9l\xE9phoniques pendant la pr\xE9paration des
+    piluliers\n- pi\xE8ce avec porte ferm\xE9e \xE0 clef ou par digicode\n- panneau
+    \xAB ne pas d\xE9ranger, pr\xE9paration de pilulier en cours \xBB ou port de gilet
+    \xAB ne pas d\xE9ranger \xBB"
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\r\n\nLes recommandations
+    pr\xE9conisent de d\xE9finir un environnement adapt\xE9 et d\xE9di\xE9 \xE0 la
+    pr\xE9paration des piluliers. S\u2019il n\u2019est pas possible de mettre en place
+    une zone d\xE9di\xE9e, mettre en place une organisation qui permet de limiter
+    les interruptions de t\xE2ches :\n\n- transfert des appels t\xE9l\xE9phoniques
+    pendant la pr\xE9paration des piluliers\n- pi\xE8ce avec porte ferm\xE9e \xE0
+    clef ou par digicode\n- panneau \xAB ne pas d\xE9ranger, pr\xE9paration de pilulier
+    en cours \xBB ou port de gilet \xAB ne pas d\xE9ranger \xBB"

@@ -1,0 +1,1516 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+
+var jsonItems = [
+    {
+        id: "bracelet",
+        num: 1,
+        name: "bracelet",
+        description: "Bracelet du patient",
+        sceneId: "sc1A_main_gauche",
+        imgOk: "bracelet_ok",
+        imgNok: "bracelet_nok",
+        isInParentScene: true,
+        groups: ["Identitovigilance", "Erreurs_niveau_usager", "v1"],
+        //text_date_entree_bracelet_nok
+        loadEvents: [{
+                name: "dateEntreBracelet",
+                type: "setDate",
+                target: ".text_date_entree_bracelet",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -5},
+                    nok: {
+                        action: "day",
+                        value: -5}
+                }
+            }
+        ],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Il y a une erreur d’identitovigilance."
+                },
+                {
+                    value: "B",
+                    text: "Le nom de famille et la date de naissance sur le bracelet d'identitovigilance sont erronés."
+                },
+                {
+                    value: "C",
+                    text: "Le nom de famille et le sexe du patient sur le bracelet d'identitovigilance sont erronés."
+                },
+                {
+                    value: "D",
+                    text: "Il n’y a plus besoin de mettre un bracelet d’identitovigilance aux patients."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B"
+            ],
+            explanation: "<p>L’erreur à trouver était que l’étiquette présente sur le bracelet d’identitovigilance " +
+                    "n'était pas correcte (erreur nom de famille + erreur date de naissance) : " +
+                    "l'identité du dossier patient correspond à une identité vérifiée par une pièce justificative d'identité lors de l'admission du patient.</p>" +
+                    "<p>Une identité correcte est composée au minimum de 5 traits stricts: " +
+                    "nom de naissance (nom de famille), " +
+                    "nom d'usage (nom marital), prénom, date de naissance, sexe. </p>" +
+                    "<p<Tout au long de la prise en charge du patient, l’identité doit être contrôlée : " +
+                    "par la présentation d’une pièce d’identité avec photo valide à l’entrée du patient, " +
+                    "par le port du bracelet d’identification par le patient, " +
+                    "par la vérification de l’identité par les professionnels de santé " +
+                    "avant chaque acte par une question ouverte et la vérification du bracelet).</p>" +
+                    "<p>Les éléments d’identification du patient doivent être strictement identiques " +
+                    "sur les différentes pièces du dossier patient.</p>" +
+                    "<p>L'identité du patient dans la chambre peut être retrouvée :<ul>" +
+                    "<li>Par une question ouverte au patient  </li>" +
+                    "<li>Sur le bracelet d'identitovigilance  </li>" +
+                    "<li>Dans le dossier patient </li>" +
+                    "<li>Sur l'étiquette du pilulier </li></ul></p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici. Il s'agit bien du bon patient.</p>" +
+                    "<p>L'identité du dossier patient correspond à une identité vérifiée par une pièce justificative d'identité lors de l'admission du patient. </p>" +
+                    "<p>Une identité correcte est composée au minimum de 5 traits stricts: " +
+                    "nom de naissance (nom de famille), " +
+                    "nom d'usage (nom marital), prénom, date de naissance, sexe. </p>" +
+                    "<p<Tout au long de la prise en charge du patient, l’identité doit être contrôlée : " +
+                    "par la présentation d’une pièce d’identité avec photo valide à l’entrée du patient, " +
+                    "par le port du bracelet d’identification par le patient, " +
+                    "par la vérification de l’identité par les professionnels de santé " +
+                    "avant chaque acte par une question ouverte et la vérification du bracelet).</p>" +
+                    "<p>Les éléments d’identification du patient doivent être strictement identiques " +
+                    "sur les différentes pièces du dossier patient.</p>"
+
+        }
+    },
+    {
+        id: "pilulier_hebdomadaire",
+        num: 2,
+        name: "pilulier_hebdomadaire",
+        description: "Pilulier",
+        sceneId: "sc6_chariot_soins_2",
+        imgOk: "pilulier_hebdomadaire_ok",
+        imgNok: "pilulier_hebdomadaire_nok",
+        groups: ["Identitovigilance", "Erreurs_niveau_usager", "v1"],
+        isInParentScene: true,
+        loadEvents: [
+            {
+                name: "dateEntrePilulierSemaine",
+                type: "setDate",
+                target: ".text_date_entree_pilulier",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -5},
+                    nok: {
+                        action: "none",
+                        value: -5}
+                }
+            }
+            ,
+            {
+                target: "today_pillulier_hebdomadaire",
+                type: "custom_action"
+            }
+        ],
+        niv3: {
+            questionText: '',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "L'erreur est que le pilulier n'est pas directement accessible depuis le lit du patient."
+                },
+                {
+                    value: "B",
+                    text: "L’erreur est que le pilulier est anonyme or il devrait comporter pour chaque jour de la semaine l'identité complète du patient."
+                },
+                {
+                    value: "C",
+                    text: "L'erreur est que le pilulier est anonyme or il devrait comporter pour chaque jour de la semaine une étiquette avec le numéro de la chambre du patient."
+                }
+            ],
+            correct_checkboxes: [
+                "B"
+            ],
+            explanation: "<p>L’erreur à trouver était l’absence d’une étiquette patient sur le pilulier, " +
+                    "ou l'ensemble des traits d'identité du patient.</p>" +
+                    "<p>On préconise donc de mettre une étiquette patient sur le pilulier, ce qui permet de regrouper " +
+                    "simplement et sans retranscription l'ensemble des traits d'identité obligatoires</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Le pilulier doit bien être identifié par une étiquette patient, " +
+                    "ce qui permet de regrouper simplement et sans retranscription l'ensemble des traits d'identité obligatoires</p>"
+
+
+        }
+    },
+    {
+        id: "prelevements",
+        num: 3,
+        name: "prelevements",
+        description: "Tubes de prélèvement",
+        sceneId: "sc3_chariot_soins_1",
+        imgOk: "prelevements_ok",
+        imgNok: "prelevements_nok",
+        groups: ["Identitovigilance", "v1"],
+        isInParentScene: true,
+        loadEvents: [
+            {
+                name: "dateEntrePilulierSemaine",
+                type: "setDate",
+                target: ".text_date_entree_patient",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -5},
+                    nok: {
+                        action: "day",
+                        value: -5}
+                }
+            }
+        ],
+        niv3: {
+            questionText: 'Quel est le problème  ?<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: " Les tubes de prélèvements vides ne devraient pas être étiquetés."
+                },
+                {
+                    value: "B",
+                    text: "L’erreur concerne l’identité du patient."
+                },
+                {
+                    value: "C",
+                    text: "Les tubes de prélèvements sont toujours interdits dans la chambre d’un patient."
+                }
+            ],
+            correct_checkboxes: [
+                "A"
+            ],
+            explanation: "<p>L’erreur à trouver était que les tubes vides étaient déjà étiquetés.</p>" +
+                    "<p>Règlementairement, les tubes de prélèvement doivent être étiquetés au lit du patient après " +
+                    "remplissage du tube et vérification de l'identité du patient</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Les tubes de prélèvement vides ne sont pas étiquetés avec une étiquette patient.</p>" +
+                    "<p>Règlementairement, les tubes de prélèvement doivent être étiquetés au lit du patient après remplissage du tube et vérification de l'identité du patient.</p>"
+        }
+    },
+    {
+        id: "item_pochurine",
+        num: 4,
+        name: "pochurine",
+        description: "Une poche d'urine",
+        sceneId: "sc1_lit",
+        imgOk: "pochurine_ok",
+        imgNok: "pochurine_nok",
+        groups: ["Hygiene", "Erreurs_niveau_usager", "v1"],
+        isInParentScene: true,
+        niv3: {
+            questionText: "La poche à urine ...",
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "...  ne doit pas toucher le sol"
+                },
+                {
+                    value: "B",
+                    text: "... pourrait être posée directement sur le lit du patient"
+                },
+                {
+                    value: "C",
+                    text: "... doit être maintenue par un support qui s'accroche sur le lit "
+                }
+            ],
+            correct_checkboxes: [
+                "A", "C"
+            ],
+            explanation: "<p>La poche à urine ne doit pas trainer sur le sol pour des raisons d’hygiène mais aussi en raison " +
+                    "du risque d’arrachement. Elle ne doit pas non plus être posée sur le lit car les urines risquent " +
+                    "de mal s’écouler dans la poche, avec un risque de contamination rétrograde. </p>" +
+                    "<p>Elle doit donc être maintenue par un support qui s’accroche sur le lit en position déclive.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>La poche à urine est maintenue par un support qui s'accroche sur le lit en position déclive. C'est un bon endroit pour placer la poche. </p>"
+        }
+
+    },
+    {
+        id: "compresses",
+        num: 5,
+        name: "compresses",
+        description: "Compresses",
+        sceneId: "sc3_chariot_soins_1",
+        imgOk: "compresses_ok",
+        imgNok: "compresses_nok",
+        groups: ["Hygiene", "Erreurs_niveau_usager", "v1"],
+        isInParentScene: true,
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Les compresses souillées doivent être éliminées dès la fin des soins par la personne ayant " +
+                            "réalisé les soins : elles ne devraient pas être laissées sur le chariot."
+                },
+                {
+                    value: "B",
+                    text: " Les compresses peuvent être laissées sur le lit du patient jusqu’à la fin du soin."
+                },
+                {
+                    value: "C",
+                    text: "Les sacs poubelles jaunes sont destinés aux ordures ménagères."
+                }
+            ],
+            correct_checkboxes: [
+                "A"
+            ],
+            explanation: "<p>L’erreur était que les compresses n’auraient pas dû être laissées sur le chariot mais auraient " +
+                    "dû être jetées immédiatement après utilisation.</p>" +
+                    "<p>Les déchets d’activités de soins doivent être gérés par la personne qui fait les soins et éliminés " +
+                    "dès la fin des soins dans un sac poubelle adapté.</p>" +
+                    "<p>Les <b>D</b>échets d'<b>A</b>ctivités de <b>S</b>oins à <b>R</b>isques <b>I</b>nfectieux (DASRI) sont constitués des déchets " +
+                    "présentant un risque infectieux du fait de la présence de micro-organismes, viables ou de " +
+                    "leurs toxines. D'autre part, même en l'absence de risque infectieux, sont également à " +
+                    "considérer systématiquement comme DASRI : <ul>" +
+                    "<li>les matériaux piquants, coupants ou tranchants destinés à l'abandon, qu'ils aient été ou " +
+                    "non en contact avec un produit biologique, GEDI 20117 " +
+                    "<li>les produits sanguins à usage thérapeutique dont la poche est percée, les produits " +
+                    "sanguins partiellement ou entièrement transfusés ainsi que les transfuseurs " +
+                    "<li>les perfusions de chimiothérapie après administration</li>" +
+                    "<li>ainsi que les déchets anatomiques non aisément identifiables </li></ul>" +
+                    "<p>Les autres déchets produits à l’hôpital sont dit « Déchets Assimilés aux ordures Ménagères ». </p>" +
+                    "<p>Chaque établissement de santé établit avec son prestataire  de traitement des déchets une " +
+                    "procédure spécifique de tri des déchets. Il est donc important de s’y référer selon " +
+                    "l’établissement dans lequel on exerce. </p>",
+            explanation_nonError: ""
+        }
+    },
+    {
+        id: "flacon_SHA",
+        num: 6,
+        name: "flacon_SHA",
+        description: "Flacon de Serum Hydro-Alcoolique",
+        sceneId: "scPrincipale",
+        imgOk: "flacon_SHA_ok",
+        imgNok: "flacon_SHA_nok",
+        groups: ["Medicaments", "v1"],
+        isInParentScene: true,
+        loadEvents: [
+            {
+                name: "date",
+                type: "setDate",
+                target: ".tspan_date_sha",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -21},
+                    nok: {
+                        action: "month",
+                        value: -13}
+                }
+            }
+        ],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Ce flacon de SHA est périmé, il doit être remplacé."
+                },
+                {
+                    value: "B",
+                    text: "On ne doit pas mettre de flacon de SHA dans une chambre de patient. "
+                },
+                {
+                    value: "C",
+                    text: "La durée de conservation d’un flacon de SHA après ouverture est définie par le fabriquant et " +
+                            "est toujours inférieure à 12 mois."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "C"
+            ],
+            explanation: "<p>L’erreur à trouver était que ce flacon de SHA est périmé, il doit être remplacé.</p>" +
+                    "<p> Un flacon de SHA doit toujours être disponible dans la chambre du patient.</p> " +
+                    "<p>Il est important de noter la date d’ouverture sur le flacon de SHA " +
+                    "(péremption après 6 mois d’ouverture pour la plupart des fournisseurs à confirmer auprès de chaque laboratoire).</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici. </p>" +
+                    "<p> Un flacon de SHA doit toujours être disponible dans la chambre du patient.</p> " +
+                    "<p>Le flacon de SHA est bien conforme (plein et non périmé).</p> " +
+                    "<p>Il est important de noter la date d’ouverture sur le flacon de SHA " +
+                    "(péremption après 6 mois d’ouverture pour la plupart des fournisseurs à confirmer auprès de chaque laboratoire).</p>"
+        }
+    },
+    {
+        id: "catheter",
+        num: 7,
+        name: "catheter",
+        description: "cathéter",
+        sceneId: "sc1C_main_droite",
+        imgOk: "catheter_ok",
+        imgNok: "catheter_nok",
+        groups: ["Medicaments", "v1"],
+        isInParentScene: true,
+        loadEvents: [
+            {
+                name: "date",
+                type: "setDate",
+                target: ".tspan_date_pose_catheter",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -1},
+                    nok: {
+                        action: "day",
+                        value: -5}
+                }
+            }
+        ],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Le site de perfusion doit rester étanche et stérile pour éviter tout risque de contamination."
+                },
+                {
+                    value: "B",
+                    text: "Ce cathéter aurait dû être enlevé après 24H pour prévenir le risque de complications infectieuses."
+                },
+                {
+                    value: "C",
+                    text: "Ce cathéter aurait du être retiré du fait de l'inflammation sur le point de ponction."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "C"
+            ],
+            explanation: "<p>L'erreur à trouver était que le pansement aurait dû être changé car décollé et que le cathéter aurait du être retiré du fait du point d'inflammation sur le point de ponction.</p>" +
+                    "<p>Le site de perfusion doit rester étanche et stérile pour éviter tout risque de contamination.</p>" +
+                    "<p>Il est donc nécessaire d'assurer une surveillance régulière du point de ponction (recherche de signes d'inflammataion) et du pansement qui peut facilement se décoller, notamment en cas de sudation importante.</p>" +
+                    "<p>La réévaluation de la pertinence de maintien du cathéter périphérique doit être au minimum quotidienne.</p>" +
+                    "<p>Il est fortement recommandé de retirer tout cathéter périphérique dès que celui-ci n’est plus indiqué.</p>" +
+                    "<p>Il est fortement recommandé de retirer le cathéter en cas de complication locale ou de suspicion d’infection systémique liée au cathéter</p>",
+            explanation_nonError: "<p>Le site de perfusion doit rester étanche et stérile pour éviter tout risque de contamination.</p>" +
+                    "<p>Il est donc nécessaire d'assurer une surveillance régulière du point de ponction (recherche de signes d'inflammataion) et du pansement qui peut facilement se décoller, notamment en cas de sudation importante.</p>" +
+                    "<p>La réévaluation de la pertinence de maintien du cathéter périphérique doit être au minimum quotidienne.</p>" +
+                    "<p>Il est fortement recommandé de retirer tout cathéter périphérique dès que celui-ci n’est plus indiqué.</p>" +
+                    "<p>Il est fortement recommandé de retirer le cathéter en cas de complication locale ou de suspicion d’infection systémique liée au cathéter.</p>"
+        }
+    },
+    {
+        id: "alarme",
+        num: 8,
+        name: "alarme",
+        description: "L'interrupteur d'appel",
+        sceneId: "sc1_lit",
+        imgOk: "alarme_ok",
+        imgNok: "alarme_nok",
+        groups: ["Bientraitance", "Erreurs_niveau_usager", "v1"],
+        isInParentScene: true,
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "La sonnette est inaccessible depuis le lit du patient."
+                },
+                {
+                    value: "B",
+                    text: "Pour ce patient la présence d’une sonnette est superflue."
+                },
+                {
+                    value: "C",
+                    text: "La sonnette doit pouvoir être accessible facilement au patient."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "C"
+            ],
+            explanation: "<p>L’erreur à trouver était que la sonnette se trouvait trop éloignée du patient.</p>" +
+                    "<p>La sonnette doit pouvoir être accessible facilement au patient " +
+                    "pour qu’il puisse alerter à tout moment le personnel de l’établissement.</p>" +
+                    "<p>L’absence de sonnette <b>ou une sonnette inaccessible</b> est considérée comme " +
+                    "une forme de maltraitance envers le patient.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>La sonnette doit pouvoir être accessible facilement au patient pour qu’il puisse alerter à tout moment le personnel de l’établissement.</p>" +
+                    "<p>L’absence de sonnette ou une sonnette inaccessible est considérée comme une forme de maltraitance envers le patient</p>"
+        }
+    },
+    {
+        id: "item_barriere",
+        name: "barriere",
+        num: 9,
+        description: "Ceci est une barriere",
+        sceneId: "sc1_lit",
+        imgOk: "barriere_bas",
+        imgNok: "barriere",
+        isInParentScene: true,
+        groups: ["Bientraitance", "v1"],
+        loadEvents: [
+            {
+                type: "custom_action",
+                target: "mirror_barriere"
+            }
+        ],
+        niv3: {
+            questionText: "",
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Les barrières de lit relevées nécessitent une prescription médicale."
+                },
+                {
+                    value: "B",
+                    text: "Les barrières de lit relevées constituent une contention physique passive."
+                },
+                {
+                    value: "C",
+                    text: "Pour ce patient les barrières de lit ne devraient pas être relevées."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B", "C"
+            ],
+            explanation: "<p>Les barrières de lit relevées en l’absence de prescription médicale dans le dossier constitue une erreur. </p>" +
+                    "<p>Les barrières de lit relevées constituent une forme de contention passive pour le patient," +
+                    "puisqu’il n’est plus libre de quitter son lit sans une aide extérieure. Pour relever les barrières, " +
+                    "il est donc nécessaire que le patient et ses proches soient informés de cette mesure, qu’une " +
+                    "prescription médicale soit rédigée. Cela doit également s’accompagner d’une surveillance " +
+                    "accrue du patient et de la réévaluation régulière de cette mesure.</p>" +
+                    "<p>L’absence de prescription peut être considérée comme une forme de maltraitance envers le patient</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Les barrières de lit ne sont pas relevées et celles-ci ne sont pas prescrites par le médecin." +
+                    "<p>Les barrières de lit relevées nécessitent une prescription médicale motivée, " +
+                    "l’information du patient et de ses proches, une surveillance et une évaluation fréquente de la sécurité du patient " +
+                    "et de l’efficacité de cette mesure sont à réaliser." +
+                    "<p>L’absence de cela peut être considérée comme une forme de maltraitance envers le patient</p>"
+        }
+
+    },
+    {
+        id: "sacPharmacie",
+        num: 10,
+        name: "sacPharmacie",
+        description: "Sachet de pharmacie",
+        sceneId: "sc2_tableChevet",
+        imgReference: "sacPharmacie_nok",
+        imgOk: "sacPharmacie_ok",
+        imgNok: "sacPharmacie_nok",
+        groups: ["Medicaments", "v1"],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Si le traitement personnel du patient est poursuivi celui-ci doit être obligatoirement re-prescrit par un médecin de l'établissement."
+                },
+                {
+                    value: "B",
+                    text: "Pour notre patient, son traitement personnel ne devrait pas se trouver dans sa chambre."
+                },
+                {
+                    value: "C",
+                    text: "le traitement personnel des patients ne doit jamais leur être laissé à disposition durant l’hospitalisation. "
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B", "C"
+            ],
+            explanation: "<p>Il ne doit être mis ou laissé à la disposition des patients, " +
+                    "aucun médicament en dehors de ceux qui leur auront été prescrit dans l’établissement, " +
+                    "et ce afin de réduire le risque de double dose et d’interaction médicamenteuse. </p>" +
+                    "<pAinsi, à l’entrée du patient, sauf situation particulière, ses médicaments lui sont retirés, placés " +
+                    "dans l’armoire à pharmacie. Ils lui seront redonnés à sa sortie.</p>",
+            explanation_nonError: "<p>Ce n'était pas une erreur</p>"
+        }
+    },
+    {
+        id: "bolMedocs",
+        num: 11,
+        name: "bolMedocs",
+        description: "Bol de médicaments",
+        sceneId: "sc2_tableChevet",
+        imgOk: "bol-medoc_ok",
+        imgNok: "bol-medoc_nok",
+        isInParentScene: true,
+        groups: ["Medicaments", "Erreurs_niveau_usager", "v1"],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Tout médicament doit pouvoir être identifiable jusqu’à son administration selon les bonnes pratiques de préparation des médicaments."
+                },
+                {
+                    value: "B",
+                    text: "Dans le cas où le médicament ne se présente pas en conditionnement unitaire, il est possible de surétiqueter ou de surconditionner le médicament avec l’ensemble des informations nécessaires. "
+                },
+                {
+                    value: "C",
+                    text: "L’erreur ici est que le médicament n’est pas identifiable."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B", "C"
+            ],
+            explanation: "<p>La présence de médicaments non identifiables sur la table de chevet " +
+                    "(médicaments déblistérisés en vrac dans un récipient) était l’erreur à trouver.</p>" +
+                    "<p>Les bonnes pratiques de préparation des médicaments exigent que le médicament soit identifiable " +
+                    "jusqu'à l'administration du médicament.</p><p> Cela suppose une découpe des blisters pour voir le nom de " +
+                    "spécialité, la DCI (<b>D</b>énomination <b>C</b>ommune <b>I</b>nternationale) , le dosage, le numéro de lot de la spécialité et la date de péremption. </p>" +
+                    "<p>Si cela n'est pas possible au vu du conditionnement, le blister ne doit pas être découpé et le médicament " +
+                    "doit être placé dans un sachet avec l'ensemble des informations nécessaires.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici. </p>"
+        }
+    },
+    {
+        id: "pilulier_quotidien",
+        num: 12,
+        name: "pilulier_quotidien",
+        description: "Second pilulier",
+        sceneId: "sc6_chariot_soins_2",
+        imgOk: "pilulier_quotidien_ok",
+        imgNok: "pilulier_quotidien_nok",
+        isInParentScene: true,
+        groups: ["Medicaments", "Erreurs_niveau_usager", "v1"],
+        loadEvents: [
+            {
+                name: "dateEntreeEtiquettePilulierMercredi",
+                type: "setDate",
+                target: ".tspan_date_EntreeEtiquettePilulierQuotidien",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -5},
+                    nok: {
+                        action: "day",
+                        value: -5}
+                }
+            },
+            {
+                name: "dates_peremption_nok",
+                type: "setDateSimple",
+                target: ".texte_date_peremption_atorvastatine",
+                content: {
+                    ok: {
+                        action: "month",
+                        value: +13},
+                    nok: {
+                        action: "month",
+                        value: -13}
+                }
+
+            },
+            {
+                //Les dates de peremption ok : entre 1 et 14 mois ds le futur
+                name: "dates_peremption_autres_medocs",
+                type: "setDateSimple",
+                target: ".text_peremption_ok",
+                content: {
+                    ok: {
+                        action: "month",
+                        value: "randomInt(1,14)"},
+                    nok: {
+                        action: "month",
+                        value: "randomInt(1,14)"}
+                }
+
+            },
+            {
+                target: "today_pillulier_quotidien",
+                type: "custom_action"
+            }
+        ],
+        niv3: {
+            questionText: '',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: " Il y a présence de médicaments périmés."
+                },
+                {
+                    value: "B",
+                    text: "Il est important de définir un environnement adapté et dédié à la préparation des piluliers et " +
+                            "de mettre en place une organisation permettant de favoriser la concentration sur la tâche et de " +
+                            "limiter les interruptions de tâches."
+                },
+                {
+                    value: "C",
+                    text: " La vérification des périmés est à réaliser à intervalle régulier et défini dans chacun des lieux " +
+                            "de stockage des médicaments."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B", "C"
+            ],
+            explanation: "<p>La présence de médicaments périmés dans le pilulier était l’erreur à trouver.</p>" +
+                    "<p>La vérification des périmés est à réaliser à intervalle régulier et défini dans chacun des lieux " +
+                    "de stockage des médicaments.</p>" +
+                    "<p>Les recommandations préconisent de définir un environnement adapté et dédié à la préparation des piluliers. S’il n’est pas possible de mettre en place une zone dédiée, mettre en place une organisation qui permet de limiter les interruptions de tâches :<ul>" +
+                    "<li>transfert des appels téléphoniques pendant la préparation des piluliers</li>" +
+                    "<li>pièce avec porte fermée à clef ou par digicode</li>" +
+                    "<li>panneau « ne pas déranger, préparation de pilulier en cours » ou port de gilet « ne pas déranger »</li></ul></p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici. </p> " +
+                    "<p>Les recommandations préconisent de définir un environnement adapté et dédié à la préparation des piluliers. S’il n’est pas possible de mettre en place une zone dédiée, mettre en place une organisation qui permet de limiter les interruptions de tâches :<ul>" +
+                    "<li>transfert des appels téléphoniques pendant la préparation des piluliers</li>" +
+                    "<li>pièce avec porte fermée à clef ou par digicode</li>" +
+                    "<li>panneau « ne pas déranger, préparation de pilulier en cours » ou port de gilet « ne pas déranger »</li></ul></p>"
+        }
+    },
+    {
+        id: "perfusion",
+        num: 13,
+        name: "perfusion",
+        description: "perfusion",
+        sceneId: "sc5_perfusion",
+        imgOk: "perfusion_ok",
+        imgNok: "perfusion_nok",
+        groups: ["Medicaments", "v1"],
+        isInParentScene: true,
+        loadEvents: [
+            {
+                name: "datePerfusion",
+                type: "setDate",
+                target: "#tspan_date_perfusion",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: 0},
+                    nok: {
+                        action: "none",
+                        value: -1}
+                }
+            }
+        ],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "L’erreur est que ce patient ne devrait pas être perfusé. "
+                },
+                {
+                    value: "B",
+                    text: "La poche de perfusion peut ne pas être identifiée ou être identifiée avec seulement le numéro de chambre du patient."
+                },
+                {
+                    value: "C",
+                    text: "La poche de perfusion doit être identifiée avec l'identité complète du patient, le nom du médicament, le dosage et la voie d’administration."
+                }
+            ],
+            correct_checkboxes: [
+                "C"
+            ],
+            explanation: "<p>L’erreur à trouver était que la poche de perfusion n'était pas identifiée.</p>" +
+                    "Les médicaments   doivent   rester   identifiables   jusqu’au   moment   de   leur   administration, y " +
+                    "compris pour les médicaments injectables. Il est donc nécessaire de reporter sur la poche :  " +
+                    "<ul><li>Le nom du médicament</li>" +
+                    "<li>La DCI</li>" +
+                    "<li>Le dosage</li>" +
+                    "<li>La voie d’administration</li>" +
+                    "<li>l’identité complète du patient</li></ul></p>"
+            ,
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p> " +
+                    "<p>La poche de perfusion est bien identifiée avec les informations nécessaires.</p>" +
+                    "Les médicaments   doivent   rester   identifiables   jusqu’au   moment   de   leur   administration, y " +
+                    "compris pour les médicaments injectables. Il est donc nécessaire de reporter sur la poche :  " +
+                    "<ul><li>Le nom du médicament</li>" +
+                    "<li>La DCI</li>" +
+                    "<li>Le dosage</li>" +
+                    "<li>La voie d’administration</li>" +
+                    "<li>l’identité complète du patient</li></ul></p>"
+        }
+    },
+    {
+        id: "mortier",
+        num: 14,
+        name: "mortier",
+        description: "mortier",
+        sceneId: "sc6_chariot_soins_2",
+        imgOk: "mortier_ok",
+        imgNok: "mortier_nok",
+        isInParentScene: true,
+        groups: ["Medicaments", "v1"],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Les comprimés d’ALFUZOSINE LP 10mg ne doivent pas être écrasés."
+                },
+                {
+                    value: "B",
+                    text: "Si des comprimés ne sont pas écrasables, et qu'il existe une alternative thérapeutique, celle-ci devra être prescrite par le médecin."
+                },
+                {
+                    value: "C",
+                    text: "Il est important d'écraser ou d’ouvrir le médicament immédiatement avant l'administration."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B", "C"
+            ],
+            explanation: "<p>D’après <a href='chambres/chambrePatient/docs/sfpc_omedit_hn_tableau_medicaments_ecrasables_juin_2015_protec.xls'>" +
+//                    explanation: "<p>D’après <a href='www.omedit-hautenormandie.fr/Files/sfpc_omedit_hn_tableau_mdicaments_crasables_juin_2015_protec.xls'>" +
+                    "la liste des médicaments des comprimés écrasables et des gélules ouvrables disponible sur le site de la SFPC</a>" +
+                    ", il est recommandé pour les comprimés d’ALFUZOSINE LP 10 mg de :" +
+                    "<b><ul><li> Ne pas croquer</li><li>Ne pas mâcher</li><li>Ne pas écraser ou broyer</li></ul> " +
+                    "...car il y a un risque de libération et d'absorption inappropriée et donc des effets indésirables" +
+                    " pouvant être précoces.</b></p>" +
+                    "<p>Il faut donc trouver une alternative thérapeutique.<br/>" +
+                    "Ici les gélules de TAMSULOSINE LP 0,4 mg, équivalent non strict, pourront être proposées. " +
+                    "Ces gélules peuvent être ouvertes : attention cependant il ne faut pas écraser ou croquer " +
+                    "les microgranules à libération prolongée qui sont à l'interieur. " +
+                    "L'ouverture de la gélule et la mise en solution des granules doit se faire de façon extemporanée," +
+                    " juste avant l'administration.</p>" +
+                    "<p>Il est important d’écraser le médicament immédiatement " +
+                    "avant l’administration car le contraire constitue un risque potentiel d’administrer " +
+                    "le traitement au mauvais patient et la poudre ainsi obtenue risque de se dégrader rapidement au contact de l’air et de la lumière." +
+                    "<p>L’alternative thérapeutique choisie devra être prescrite par le médecin.</p>"
+            ,
+            explanation_nonError: ""
+        }
+    },
+    {
+        id: "item_roues",
+        name: "roues",
+        num: 15,
+        description: "Ce sont les roues du lit",
+        sceneId: "sc1_lit",
+        imgOk: "roues_ok",
+        imgNok: "roues_nok",
+        isInParentScene: true,
+        disabled: false,
+        groups: ["Bientraitance"],
+        loadEvents: [
+        ],
+        niv3: {
+            questionText: "",
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Les freins sur les lits hospitaliers à roulettes doivent être mis dès que le lit se trouve à l’arrêt."
+                },
+                {
+                    value: "B",
+                    text: "Il s’agit d’une protection contre les risques de chute."
+                },
+                {
+                    value: "C",
+                    text: "Si les freins sont activés, cela peut être considéré comme une forme de maltraitance envers le patient."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B"
+            ],
+            explanation: "<p>L'erreur à trouver était l'absence d'activation des freins du lit du patient.</p><p>Par mesure de sécurité, il est indispensable que les freins des roues soient activés lorsque le lit est à l'arrêt. Il s’agit d’une protection contre les risques mécaniques. Cette mesure réduit massivement les risques de chutes des patients agités.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Les freins du lit sont bien activés.  Il s’agit d’une protection contre les risques mécaniques. </p>" +
+                    "<p>Cette mesure réduit massivement les risques dechutes des patients agités.</p>"
+        }
+    },
+    {
+        id: "bouquet",
+        name: "bouquet",
+        num: 16,
+        description: "Un bouquet de fleurs",
+        sceneId: "sc2_tableChevet",
+        imgOk: "bouquet_ok",
+        imgNok: "bouquet_nok",
+        isInParentScene: true,
+//        hidden: true, //desactive--desaffiche cette erreur
+        disabled: false, //desactive cette erreur
+        groups: ["Hygiene"],
+        loadEvents: [
+        ],
+        niv3: {
+            questionText: "",
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Dans certains cas il est déconseillé de laisser des fleurs en bouquets dans une chambre d’hôpital."
+                },
+                {
+                    value: "B",
+                    text: "Les bouquets de fleurs et les fleurs en pot peuvent constituer un risque potentiel de contamination (germes/bactéries)."
+                },
+                {
+                    value: "C",
+                    text: "Les bouquets de fleurs et les fleurs en pot sont toujours interdites dans tous les hôpitaux."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B"
+            ],
+            explanation: "<p>La présence d'un bouquet de fleurs dans la chambre du patient est une erreur possible.</p><p>Les fleurs en bouquets et les fleurs en pot sont déconseillées et parfois interdites dans les chambres des patients à l’hôpital. Il peut y avoir un risque d'infection notamment pour les patients les plus fragiles car elles sont des  réservoirs à germes et à bactéries (patients immunodéprimés).</p>",
+            explanation_nonError: ""
+        }
+
+    },
+    {
+        id: "chlorhexidine_alcoolique",
+        num: 17,
+        name: "chlorhexidine_alcoolique",
+        description: "Flacon de chlorhexidine alcoolique",
+        sceneId: "sc3_chariot_soins_1",
+        imgOk: "chlorhexidine_alcoolique_ok",
+        imgNok: "chlorhexidine_alcoolique_nok",
+        groups: ["Hygiene"],
+        isInParentScene: true,
+        disabled: false,
+        loadEvents: [
+            {
+                name: "dateOuvertureChlorhexidine",
+                type: "setDate",
+                target: ".text_date_ouverture_chlorhexidine_alcoolique",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -7},
+                    nok: {
+                        action: "month",
+                        value: -2}
+                }
+            }
+        ],
+        niv3: {
+            questionText: 'Quel est le problème  ?<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "La validité de conservation de la Chlorhexidine alcoolique est de 1 mois après ouverture."
+                },
+                {
+                    value: "B",
+                    text: "La validité de conservation de la Chlorhexidine alcoolique est de 3 mois après ouverture."
+                },
+                {
+                    value: "C",
+                    text: "Ce flacon est périmé, il doit être remplacé."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "C"
+            ],
+            explanation: "<p>L'erreur à trouver était la péremption du flacon de chlorhexidine alcoolique.</p><p>La validité de conservation de la Chlorhexidine alcoolique est de 1 mois après ouverture. Il est important de bien penser à noter date d’ouverture sur le flacon entamé.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Le flacon de chlorhexidine alcoolique est conforme (non périmé + ouverture < 1 mois).</p>" +
+                    "<p>Il est recommandé pour l'antisepsie avant un acte invasif de bas niveau de risque infectieux, comme les prélèvements sanguins (hors hémoculture), d'utiliser un antiseptique alcoolique. </p>" +
+                    "<p>La validité de conservation de la Chlorhexidine alcoolique est de 1 mois après ouverture. Il est important de bien penser à noter la date d’ouverture sur le flacon entamé.</p>"
+        }
+    },
+    {
+        id: "chlorhexidine_aqueuse",
+        num: 18,
+        name: "chlorhexidine_aqueuse",
+        description: "Flacon de chlorhexidine aqueuse",
+        sceneId: "sc3_chariot_soins_1",
+        imgOk: "chlorhexidine_aqueuse_ok",
+        imgNok: "chlorhexidine_aqueuse_nok",
+        groups: ["Hygiene"],
+        disabled: false,
+        isInParentScene: true,
+        item_correlated: 17,
+        loadEvents: [
+            {
+                name: "dateOuvertureChlorhexidine",
+                type: "setDate",
+                target: ".text_date_ouverture_chlorhexidine_acqueuse",
+                content: {
+                    ok: {
+                        action: "day",
+                        value: -0},
+                    nok: {
+                        action: "day",
+                        value: -0}
+                }
+            }
+        ],
+        niv3: {
+            questionText: 'Quel est le problème  ?<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "On doit réaliser l'antisepsie avec un antiseptique <b>aqueux</b> avant un prélèvement sanguin."
+                },
+                {
+                    value: "B",
+                    text: "On doit réaliser l'antiseptie avec un antispetique <b>alcoolique</b> avant un prélèvement sanguin"
+                },
+                {
+                    value: "C",
+                    text: "Ce flacon est périmé, il doit être remplacé."
+                }
+            ],
+            correct_checkboxes: [
+                "B"
+            ],
+            explanation: "<p>L'erreur à trouver était la présence d'antiseptique aqueux et non alcoolique pour la préparation cutanée avant le prélèvement veineux. </p>" +
+                    "<p>La solutions aqueuse de chlorhexidine présente une activité bactéricide insuffisante et ne doit donc pas être utilisée pour l'antisepsie.</p>" +
+                    "<p>Il est recommandé pour l'antisepsie avant un acte invasif de bas niveau de risque infectieux, comme les prélèvements sanguins (hors hémoculture), d'utiliser un antiseptique alcoolique.</p>",
+            explanation_nonError: ""
+        }
+    },
+    {
+        // SAC DASRI SOUPLE
+        id: "sac_dasri",
+        num: 19,
+        name: "sac_dasri",
+        description: "Sac jaune Dasri",
+        sceneId: "sc3_chariot_soins_1",
+        imgOk: "sac_dasri_ok",
+        imgNok: "sac_dasri_nok",
+        groups: ["Hygiene"],
+        isInParentScene: true,
+        disabled: false,
+//         hidden: true,
+        loadEvents: [
+        ],
+        niv3: {
+            questionText: 'Quel est le problème  ?<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Les aiguilles doivent être jetées dans la boite à aiguille (conteneur rigide) OPCT (objets piquants, coupants et tranchants) "
+                },
+                {
+                    value: "B",
+                    text: "Les aiguilles doivent être jetées dans le sac poubelle noir."
+                },
+                {
+                    value: "C",
+                    text: "La limite de remplissage du sac DASRI jaune est dépassée."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "C"
+            ],
+            explanation: "<p>L'erreur à trouver était que le sac DASRI jaune était trop plein et qu'il contenait des aiguilles qui auraient dû être jetées en conteneur rigide.</p>" +
+                    "<p>Les objets contenant des liquides biologiques doivent être éliminés dans des sacs poubelles DASRI (Déchets d'Activité de Soins à Risques Infectieux). Ils sont prévus et adaptés pour la récolte des déchets médicaux. Facilement reconnaissables grâce à leur couleur jaune, et au texte «  <b>D</b>échets d'<b>A</b>ctivité de <b>S</b>oins à <b>R</b>isques <b>I</b>nfectieux mous » et au pictogramme « Risque biologique ».<p>" +
+                    "<p>Les Déchets d'Activités de Soins à Risques Infectieux (DASRI) sont constitués des déchets présentant un risque infectieux du fait de la présence de micro-organismes, viables ou de leurs toxines. D'autre part, même en l'absence de risque infectieux, sont également à considérer systématiquement comme DASRI : <p>" +
+                    "<ul>" +
+                    "<li>les matériaux piquants, coupants ou tranchants destinés à l'abandon, qu'ils aient été ou non en contact avec un produit biologique qui doivent être éliminés dans une boite rigide DASRI</li>" +
+                    "<li>les poches de produits sanguins labiles, même vides</li>" +
+                    "<li>les perfusions de chimiothérapie après administration</li>" +
+                    "<li>ainsi que les déchets anatomiques non aisément identifiables </li>" +
+                    "</ul>" +
+                    "Les autres déchets produits à l’hôpital sont dits « Déchets Assimilés aux ordures Ménagères » et sont mis dans des sacs poubelles noires. </p>" +
+                    "Chaque établissement de santé établit avec son prestataire de traitement des déchets une procédure spécifique de tri des déchets. Il est donc important de s’y référer selon l’établissement dans lequel on exerce.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Les DASRI  sont les Déchets d'Activité de Soins à Risque Infectieux. Sont également à considérer comme DASRI : " +
+                    "<ul><li>les matériaux piquants, coupants ou tranchants destinés à l'abandon, qu'ils aient été ou non en contact avec un produit biologique qui doivent être éliminés dans une boite rigide DASRI.</li>" +
+                    "<li>les poches de produits sanguins labiles, même vides </li>" +
+                    "<li>les perfusions de chimiothérapie après administration</li>" +
+                    "<li>ainsi que les déchets anatomiques non aisément identifiables </li></ul></p>" +
+                    "<p>Les autres déchets sont dits DAOM  « Déchets Assimilés aux ordures Ménagères » et sont mis dans des sacs poubelles noires. Les sacs poubelles noires sont à éliminer par la famille via le réseau habituel de traitement des déchets. </p>"
+        }
+    },
+    {
+        //SAC DASRI CONTENEUR RIGIDE EN PLASTIQUE
+        id: "dasri_opct",
+        num: 20,
+        name: "dasri_opct",
+        description: "Conteneur jaune Dasri OPCT",
+        sceneId: "sc3_chariot_soins_1",
+        imgOk: "dasri_opct_ok",
+        imgNok: "dasri_opct_nok",
+        groups: ["Hygiene"],
+        isInParentScene: true,
+        disabled: false,
+        loadEvents: [
+        ],
+        niv3: {
+            questionText: 'Quel est le problème  ?<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "La limite de remplissage du conteneur jaune DASRI OPCT est dépassée. "
+                },
+                {
+                    value: "B",
+                    text: "Le conteneur DASRI OPCT doit être fixé à un support."
+                },
+                {
+                    value: "C",
+                    text: "Il ne faut pas rentrer de conteneur jaune DASRI OPCT dans la chambre du patient."
+                }
+            ],
+            correct_checkboxes: [
+                "B"
+            ],
+            explanation: "<p>L'erreur à trouver était le conteneur jaune DASRI OPCT non fixé au support.</p>" +
+                    "<p>Les objets contenant des liquides biologiques doivent être éliminés dans des sacs poubelles DASRI (Déchets d'Activité de Soins à Risques Infectieux). Ils sont prévus et adaptés pour la récolte des déchets médicaux. </p>" +
+                    "<p>Les DASRI sont constitués des déchets présentant un risque infectieux du fait de la présence de micro-organismes, viables ou de leurs toxines. D'autre part, même en l'absence de risque infectieux, sont également à considérer systématiquement comme DASRI : </p>" +
+                    "<ul>" +
+                    "<li>les matériaux piquants, coupants ou tranchants destinés à l'abandon, qu'ils aient été ou non en contact avec un produit biologique qui doivent être éliminés dans une boite rigide DASRI.</li>" +
+                    "<li>les poches de produits sanguins labiles, même vides </li>" +
+                    "<li>les perfusions de chimiothérapie après administration</li>" +
+                    "<li>ainsi que les déchets anatomiques non aisément identifiables </li>" +
+                    "</ul>" +
+                    "<p>Le conditionnement des DASRI doit comporter une limite de remplissage à ne pas dépasser. Des systèmes de fixation (mural ou sur chariot) doivent garantir la stabilité des boites et mini-collecteurs. Les conteneurs doivent être maintenus stables sur un support afin d'éviter le renversement du contenu et ainsi éviter l'exposition à des risques infectieux.</p>" +
+                    "<p>Le conteneur DASRI OPCT doit toujours se trouver à portée de main lors du soin.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Le conteneur jaune DASRI OPCT est bien fixé au chariot et la limite de remplissage n'est pas dépassée. </p>" +
+                    "<p>Le conditionnement des DASRI doit comporter une limite de remplissage à ne pas dépasser. Des systèmes de fixation (mural ou sur chariot) doivent garantir la stabilité des boites et mini-collecteurs. Les conteneurs doivent être maintenus stables sur un support afin d'éviter le renversement du contenu et ainsi éviter l'exposition à des risques infectieux.</p>"
+        }
+    },
+    {
+        id: "flacon_SHA_vide",
+        num: 21,
+        name: "flacon_SHA_vide",
+        description: "Flacon de Serum Hydro-Alcoolique",
+        sceneId: "scPrincipale",
+        imgOk: "flacon_SHA_vide_ok",
+        imgNok: "flacon_SHA_vide_nok",
+        groups: ["Hygiene"],
+        isInParentScene: true,
+        hidden: false,
+        disabled: false,
+        item_correlated: 6,
+        loadEvents: [
+            {
+                name: "date",
+                type: "setDate",
+                target: ".tspan_date_sha_vide",
+                content: {
+                    ok: {
+                        action: "month",
+                        value: -3},
+                    nok: {
+                        action: "month",
+                        value: -3}
+                }
+            }
+        ],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Le flacon de SHA est périmé, il doit être remplacé."
+                },
+                {
+                    value: "B",
+                    text: "Le flacon de SHA est vide, il doit être remplacé."
+                },
+                {
+                    value: "C",
+                    text: "La durée de conservation d’un flacon de SHA après ouverture est définie par le fabriquant et est toujours inférieure à 12 mois. "
+                },
+                {
+                    value: "D",
+                    text: " Le SHA est essentiel dans la prévention contre les des infections associées aux soins."
+                }
+            ],
+            correct_checkboxes: [
+                "B", "C", "D"
+            ],
+            explanation: "<p>L'erreur à trouver était que le flacon de SHA etait vide. Il est fortement recommandé que les Solutions Hydro-Alcooliques soient disponibles à portée de mains immédiate lors des soins. Dans les situations où la présence de SHA peut représenter un risque (service d'addictologie), les soignants peuvent utiliser des flacons de poches. Un flacon de SHA doit toujours être disponible dans la chambre des patients, facilement accessible aux soignants, à proximité immédiate ou au lit du malade, à tout moment lors des soins (sauf exceptions comme les services d'addictologie). Il est fortement recommandé d’effectuer une friction hydro-alcoolique : </p>" +
+                    "<ul>" +
+                    "<li> à l'entrée et à la sortie de la chambre</li> " +
+                    "<li> entre deux soins</li> " +
+                    "<li> entre deux patients d'une même chambre</li> " +
+                    "<li> avant et après le port de gants</li> " +
+                    "<li> immédiatement avant tout contact direct avec un patient,</li> " +
+                    "<li> immédiatement avant tout soin propre ou tout acte invasif,</li> " +
+                    "<li> entre un soin contaminant et un soin propre ou un acte invasif chez un même patient,</li> " +
+                    "<li> après le dernier contact direct ou soin auprès d’un patient,</li> " +
+                    "<li> après contact avec l’environnement immédiat du patient,</li> " +
+                    "<li> après tout contact avec des liquides biologiques immédiatement après avoir retiré les gants (à défaut, si pas d’usage de gants, après un lavage au savon doux),</li> " +
+                    "<li> avant d’enfiler des gants pour un soin,</li> " +
+                    "<li> immédiatement après le retrait des gants de soins.</li> " +
+                    "</ul>" +
+                    "<p>Il est important de noter la date d’ouverture sur le flacon de SHA (péremption après 6 mois d'ouverture en général, à confirmer auprès du fournisseur)</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>Un flacon de SHA doit toujours être disponible dans la chambre du patient.</p>" +
+                    "<p>Le flacon de SHA est bien conforme (plein et non périmé).</p>" +
+                    "<p>Il est important de noter la date d’ouverture sur le flacon de SHA (péremption après 6 mois d’ouverture pour la plupart des fournisseurs à confirmer auprès de chaque laboratoire).</p>"
+        }
+    },
+    {
+        id: "cheveux_infirmiere",
+        name: "infirmiere_visage",
+        num: 22,
+        description: "Le visage de l'infirmière",
+        sceneId: "scPrincipale",
+        imgOk: "infirmiere_visage_ok",
+        imgNok: "infirmiere_visage_nok",
+        hidden: false,
+        disabled: false,
+        groups: ["Hygiene"],
+        loadEvents: [
+        ],
+        niv3: {
+            questionText: "",
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "L'infirmière doit porter une charlotte. "
+                },
+                {
+                    value: "B",
+                    text: "Pour répondre aux bonnes pratiques d’hygiène, l’infirmière doit s’attacher les cheveux.  "
+                },
+                {
+                    value: "C",
+                    text: "C’est une obligation réglementaire. "
+                }
+            ],
+            correct_checkboxes: [
+                "B"
+            ],
+            explanation: "<p>L'erreur à trouver était que l'IDE avait les cheveux longs détachés.</p>" +
+                    "<p>Par mesure d’hygiène, il est conseillé aux soignants de s’attacher les cheveux lorsqu'ils sont longs.</p>" +
+                    "<p>Une tenue de travail appropriée à l'activité de soins a pour objectifs d'assurer une protection des professionnels des établissements de santé au cours de leurs activités et de prévenir la transmission croisée de micro-organismes. </p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici. </p>" +
+                    "<p>L'IDE porte ses cheveux attachés comme il l'est recommandé par mesure d'hygiène. </p>" +
+                    "<p>Une tenue de travail appropriée à l'activité de soins a pour objectifs d'assurer une protection des professionnels des établissements de santé au cours de leurs activités et de prévenir la transmission croisée de micro-organismes. </p>"
+        }
+
+    },
+    {
+        id: "prescription_amoxicilline",
+        num: 23,
+        name: "prescription_amoxicilline",
+        description: "Prescription",
+        sceneId: "sc4b1_prescription_medicamenteuse",
+        imgOk: "prescription_amoxicilline_ok",
+        imgNok: "prescription_amoxicilline_nok",
+        disabled: false,
+        groups: ["Medicament"],
+        loadEvents: [{
+                name: "amoxi",
+                type: "setText",
+                target: "#svgOut .text_allergies",
+                content: {
+                    ok: {value: "Néant"},
+                    nok: {value: "Amoxiciline"}
+                }
+            }
+        ],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Il n'existe pas de véritable allergie à l'amoxicilline."
+                },
+                {
+                    value: "B",
+                    text: "Les notions d'allergie doivent figurer dans le dossier patient."
+                },
+                {
+                    value: "C",
+                    text: "L’Amoxicilline/Acide clavulanique n’est pas adapté pour ce patient du fait d’une allergie à l’Amoxicilline notée dans le dossier médical."
+                }
+            ],
+            correct_checkboxes: [
+                "B", "C"
+            ],
+            explanation: "L'erreur à trouver était la prescription d'amoxicilline alors que le patient est allergique.</p>" +
+                    "<p>Ce patient est allergique à l’amoxicilline, comme indiqué dans son dossier médical.</p>" +
+                    "<p>La prescription d’amoxicilline/acide clavulanique pourrait déclencher une réaction allergique pouvant se compliquer et mener à une anaphylaxie (réaction allergique rare, mais qui provoque le dysfonctionnement généralisé de plusieurs systèmes du corps et peut conduire au décès).</p>" +
+                    "<p>Un changement d’antibiothérapie est nécessaire pour ce patient.</p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>La ligne de prescription est conforme et le patient n'est pas allergique.</p>"
+        }
+    },
+    {
+        id: "dossier_ide_tramadol",
+        num: 25,
+        name: "dossier_ide_tramadol",
+        description: "Prescription manuelle",
+        sceneId: "sc7_dossier_infirmiere",
+        imgOk: "dossier_ide_tramadol_ok",
+        imgNok: "dossier_ide_tramadol_nok",
+        disabled: false,
+        isInParentScene: false,
+        groups: ["Medicament"],
+        loadEvents: [],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "La retranscription manuscrite d'une prescription est un risque potentiel d’erreur."
+                },
+                {
+                    value: "B",
+                    text: " Le tramadol doit être prescrit par le médecin sur le support de prescription du service (logiciel d'aide à la prescription de l’établissement ou ordonnance papier). "
+                },
+                {
+                    value: "C",
+                    text: "L’infirmière peut donner le Tramadol au patient même si le médecin ne l’a pas prescrit."
+                }
+            ],
+            correct_checkboxes: [
+                "A", "B"
+            ],
+            explanation: "<p>L'erreur était que le tramadol n'est pas prescrit. </p>" +
+                    "<p>La prescription est un acte médical, elle est rédigée par le médecin ou par toute personne habilitée, après examen du patient.</p>" +
+                    "<p>Une prescription retranscrite par une IDE n’est plus une prescription médicale.. Elle est donc interdite (arrêté du 6 avril 2011, article 13). </p>" +
+                    "<p>La prescription orale ne doit être acceptée qu’exceptionnellement et dans des situations d'urgence car elle augmente le risque d'erreur. Le médecin devra confirmer par écrit systématiquement et dès que possible sa prescription.<p>",
+            explanation_nonError: ""
+        }
+    },
+    {
+        id: "dossier_ide_calcul",
+        num: 26,
+        name: "dossier_ide_calcul",
+        description: "Prescription, calcul",
+        sceneId: "sc7_dossier_infirmiere",
+        imgOk: "dossier_ide_calcul_ok",
+        imgNok: "dossier_ide_calcul_nok",
+        disabled: false,
+        groups: ["Medicament"],
+        loadEvents: [],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Le calcul de dose est correct."
+                },
+                {
+                    value: "B",
+                    text: "L'infirmière s'apprête à administrer trop de gouttes de Tiapridal au patient."
+                },
+                {
+                    value: "C",
+                    text: "L'infirmière ne va pas administrer assez de gouttes de Tiapridal au patient."
+                }
+            ],
+            correct_checkboxes: [
+                "B"
+            ],
+            explanation: "<p>Il y a une erreur dans le calcul de dose. </p>" +
+                    "<p>Une goutte de Tiapridal équivaut à 5mg (écrit dans la prescription). Il faut donc administrer 10 gouttes de Tiapridal pour faire 50mg et non 50 gouttes. Si l'infirmière administre 50 gouttes, le patient va recevoir 250mg de Tiapridal.</p>" +
+                    "<p>Il risque donc d'être en surdosage et de présenter des effets indésirables : somnolence, sédation, coma, hypotension et symptômes extrapyramidaux.<p>",
+            explanation_nonError: ""
+        }
+    },
+    {
+        id: "dossier_ide_prelevement",
+        num: 27,
+        name: "dossier_ide_prelevement",
+        description: "Prescription prise sang",
+        sceneId: "sc7_dossier_infirmiere",
+        imgOk: "dossier_ide_prelevement_ok",
+        imgNok: "dossier_ide_prelevement_nok",
+        disabled: false,
+        groups: [],
+        loadEvents: [],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "La prise de sang n’est pas prescrite par le médecin dans le dossier médical, il s’agit d’une erreur. "
+                },
+                {
+                    value: "B",
+                    text: " Il n’y a pas besoin de prescription médicale pour une prise de sang."
+                },
+                {
+                    value: "C",
+                    text: "Une prise de sang doit toujours être réalisée à jeun."
+                }
+            ],
+            correct_checkboxes: [
+                "A"
+            ],
+            explanation: "<p>L'erreur à trouver était l'absence de prescription médicale de la prise de sang.</p>" +
+                    "<p>L’infirmier est habilité à réaliser une prise de sang soit en application d’une prescription médicale qui, sauf urgence, est écrite, datée et signée par le médecin.<p>",
+            explanation_nonError: ""
+        }
+    },
+    {
+        id: "prescription_identites",
+        num: 28,
+        name: "prescription_identites",
+        description: "Prescription manuelle 2",
+        sceneId: "sc4b1_prescription_medicamenteuse",
+        imgOk: "prescription_identites_ok",
+        imgNok: "prescription_identites_nok",
+        disabled: false,
+        groups: ["Medicament"],
+        loadEvents: [],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Cette prescription n’est pas conforme, il manque l’identité du prescripteur et l’identité du patient (nom et prénom)"
+                },
+                {
+                    value: "B",
+                    text: "Cette prescription n’est pas conforme il manque : l’âge, le sexe et le poids du patient."
+                },
+                {
+                    value: "C",
+                    text: "Cette prescription n’est pas conforme il manque le nom de spécialité du médicament"
+                }
+            ],
+            correct_checkboxes: [
+                "A"
+            ],
+            explanation: "<p>L'erreur à trouver était que la prescription n'est pas conforme puisqu'il manque l'identité du patient et l'identité du prescripteur.</p>" +
+                    "<p>La prescription doit comporter  :</p>" +
+                    "<ul>" +
+                    "<li> le nom et prénom du patient, son sexe et sa date de naissance</li>" +
+                    "<li> si nécessaire, son poids et sa surface corporelle</li>" +
+                    "<li> le cas échéant, la mention d’une grossesse ou d’un allaitement, ou d'une allergie, ou d'un état pathologique (insuffisance hépatique ou rénale), ou d’un autre traitement</li>" +
+                    "<li> la qualité, le nom et la signature du prescripteur (qui peut être électronique)</li>" +
+                    "<li> l’identification de l’unité de soins</li>" +
+                    "<li> la date et l’heure de la prescription</li>" +
+                    "<li> la dénomination commune du médicament, son dosage et sa forme pharmaceutique</li>" +
+                    "<li> la voie d’administration</li>" +
+                    "<li> la dose par prise et par 24 heures</li>" +
+                    "<li> le rythme ou les horaires de l’administration suivant les cas</li>" +
+                    "<li> pour les injectables, les modalités de dilution, la vitesse et la durée de perfusion, en clair ou par référence à un protocole préétabli</li>" +
+                    "<li> la durée de traitement, lorsque celle-ci est connue à l’avance ou fixée par la réglementation</li>" +
+                    "</ul>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>La prescription doit comporter  :</p>" +
+                    "<ul>" +
+                    "<li> le nom et prénom du patient, son sexe et sa date de naissance</li>" +
+                    "<li> si nécessaire, son poids et sa surface corporelle</li>" +
+                    "<li> le cas échéant, la mention d’une grossesse ou d’un allaitement, ou d'une allergie, ou d'un état pathologique (insuffisance hépatique ou rénale), ou d’un autre traitement</li>" +
+                    "<li> la qualité, le nom et la signature du prescripteur (qui peut être électronique)</li>" +
+                    "<li> l’identification de l’unité de soins</li>" +
+                    "<li> la date et l’heure de la prescription</li>" +
+                    "<li> la dénomination commune du médicament, son dosage et sa forme pharmaceutique</li>" +
+                    "<li> la voie d’administration</li>" +
+                    "<li> la dose par prise et par 24 heures</li>" +
+                    "<li> le rythme ou les horaires de l’administration suivant les cas</li>" +
+                    "<li> pour les injectables, les modalités de dilution, la vitesse et la durée de perfusion, en clair ou par référence à un protocole préétabli</li>" +
+                    "<li> la durée de traitement, lorsque celle-ci est connue à l’avance ou fixée par la réglementation</li>" +
+                    "</ul>"
+        }
+    },
+    {
+        id: "prescription_tracabilite",
+        num: 29,
+        name: "prescription_tracabilite",
+        description: "Prescription, traçabilité",
+        sceneId: "sc4b1_prescription_medicamenteuse",
+        imgOk: "prescription_tracabilite_ok",
+        imgNok: "prescription_tracabilite_nok",
+        disabled: false,
+        groups: ["Medicament"],
+        loadEvents: [],
+        niv3: {
+            questionText: '<br/> ',
+            type: "checkbox",
+            checkboxes: [
+                {
+                    value: "A",
+                    text: "Il n'est pas nécessaire d'effectuer la traçabilité de l'administration des médicaments."
+                },
+                {
+                    value: "B",
+                    text: "L'erreur est que l'administration des médicaments n'est pas tracée sur la prescription."
+                },
+                {
+                    value: "C",
+                    text: "Il est préférable d'utiliser un support de prescription permettant également la traçabilité de l'administration."
+                }
+            ],
+            correct_checkboxes: [
+                "B", "C"
+            ],
+            explanation: "<p>L'erreur à trouver était l'absence de traçabilité de l'administration des médicaments.</p>" +
+                    "<p>La traçabilité de l'administration des médicaments doit se faire en temps réel sur le support de prescription avec la date et l'heure d'administration et le nom de l’IDE qui a administré le médicament.</p>" +
+                    "<p>Il convient d’utiliser un support qui permette d’avoir la prescription et la traçabilité de l’administration sur un même document afin d'éviter les erreurs liées à une retranscription. </p>" +
+                    "<p>La non administration doit également être tracée avec son motif. </p>",
+            explanation_nonError: "<p>Il n'y avait pas d'erreur à trouver ici.</p>" +
+                    "<p>La traçabilité de l'administration des médicaments a été correctement effectuée.</p>"
+        }
+    }
+
+    // {
+    //     id: "poche_amox",
+    //     num: 24,
+    //     name: "poche_amox",
+    //     description: "Prescription Amoxiciline",
+    //     sceneId: "sc5_perfusion",
+    //     imgOk: "poche_amox_ok",
+    //     imgNok: "poche_amox_nok",
+    //     disabled: false,
+    //     isInParentScene: true,
+    //     groups: ["Medicament"],
+    //     loadEvents: [],
+    //     niv3: {
+    //         questionText: '<br/> ',
+    //         type: "checkbox",
+    //         checkboxes: [
+    //             {
+    //                 value: "A",
+    //                 text: "L'amoxicilline ne s'administre jamais en perfusion."
+    //             },
+    //             {
+    //                 value: "B",
+    //                 text: "L'étiquetage du la poche ne permet pas une identification correcte du médicament. "
+    //             },
+    //             {
+    //                 value: "C",
+    //                 text: "Les médicaments doivent rester identifiables jusqu'au moment de leur administration, y compris pour les médicaments injectables. "
+
+    //             },
+    //             {
+    //                 value: "D",
+    //                 text: "L'identité du patient doit être inscrit sur l'étiquette."
+    //             }
+    //         ],
+    //         correct_checkboxes: [
+    //             "B", "C", "D"
+    //         ],
+    //         explanation: "<p>L'erreur à trouver était un étiquettage non conforme de la poche de perfusion. </p>" +
+    //                 "<p>Les médicaments doivent rester identifiables jusqu’au moment de leur administration, y compris pour les médicaments injectables. </p>" +
+    //                 "<p>L'étiquetage de la préparation doit se faire en temps réel. </p>" +
+    //                 "<p>Les étiquettes des préparations injectables doivent comporter :</p>" +
+    //                 "<ul>" +
+    //                 "<li> les nom et prénom du patient,</li>" +
+    //                 "<li> la dénomination de la spécialité et le cas échéant la DCI,</li>" +
+    //                 "<li> le dosage exprimé en concentration ou en quantité,</li>" +
+    //                 "<li> la voie d’administration IM, IV, SC,</li>" +
+    //                 "<li> l’heure et la date de préparation,</li>" +
+    //                 "<li> la durée et le débit si nécessaire,</li>" +
+    //                 "<li> le nom de l’IDE qui a préparé.</li>" +
+    //                 "</ul>" +
+    //                 "<p>Il est recommandé d'utiliser une étiquette pré-imprimée.<p>",
+    //         explanation_nonError: ""
+    //     }
+    // },
+];

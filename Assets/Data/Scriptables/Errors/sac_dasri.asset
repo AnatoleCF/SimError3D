@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: sac_dasri
+  m_EditorClassIdentifier: 
+  Number: 19
+  Name: sac_dasri
+  Group: Hygiene
+  Answers:
+  - "Les aiguilles doivent \xEAtre jet\xE9es dans la boite \xE0 aiguille (conteneur
+    rigide) OPCT (objets piquants, coupants et tranchants)."
+  - "Les aiguilles doivent \xEAtre jet\xE9es dans le sac poubelle noir."
+  - "La limite de remplissage du sac DASRI jaune est d\xE9pass\xE9e."
+  CorrectAnswers: 0000000002000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait que le sac DASRI jaune \xE9tait
+    trop plein et qu'il contenait des aiguilles qui auraient d\xFB \xEAtre jet\xE9es
+    en conteneur rigide.\n\r\nLes objets contenant des liquides biologiques doivent
+    \xEAtre \xE9limin\xE9s dans des sacs poubelles DASRI (D\xE9chets d'Activit\xE9
+    de Soins \xE0 Risques Infectieux). Ils sont pr\xE9vus et adapt\xE9s pour la r\xE9colte
+    des d\xE9chets m\xE9dicaux. Facilement reconnaissables gr\xE2ce \xE0 leur couleur
+    jaune, et au texte \xAB  <b>D</b>\xE9chets d'<b>A</b>ctivit\xE9 de <b>S</b>oins
+    \xE0 <b>R</b>isques <b>I</b>nfectieux mous \xBB et au pictogramme \xAB Risque
+    biologique \xBB.\n\nLes D\xE9chets d'Activit\xE9s de Soins \xE0 Risques Infectieux
+    (DASRI) sont constitu\xE9s des d\xE9chets pr\xE9sentant un risque infectieux du
+    fait de la pr\xE9sence de micro-organismes, viables ou de leurs toxines. D'autre
+    part, m\xEAme en l'absence de risque infectieux, sont \xE9galement \xE0 consid\xE9rer
+    syst\xE9matiquement comme DASRI :\n\n- les mat\xE9riaux piquants, coupants ou
+    tranchants destin\xE9s \xE0 l'abandon, qu'ils aient \xE9t\xE9 ou non en contact
+    avec un produit biologique qui doivent \xEAtre \xE9limin\xE9s dans une boite rigide
+    DASRI\r\n- les poches de produits sanguins labiles, m\xEAme vides\n- les perfusions
+    de chimioth\xE9rapie apr\xE8s administration\n- ainsi que les d\xE9chets anatomiques
+    non ais\xE9ment identifiables\n\r\nLes autres d\xE9chets produits \xE0 l\u2019h\xF4pital
+    sont dits \xAB D\xE9chets Assimil\xE9s aux ordures M\xE9nag\xE8res \xBB et sont
+    mis dans des sacs poubelles noires.\n\nChaque \xE9tablissement de sant\xE9 \xE9tablit
+    avec son prestataire de traitement des d\xE9chets une proc\xE9dure sp\xE9cifique
+    de tri des d\xE9chets. Il est donc important de s\u2019y r\xE9f\xE9rer selon l\u2019\xE9tablissement
+    dans lequel on exerce.\n            "
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nLes DASRI  sont
+    les D\xE9chets d'Activit\xE9 de Soins \xE0 Risque Infectieux. Sont \xE9galement
+    \xE0 consid\xE9rer comme DASRI :\n\n- les mat\xE9riaux piquants, coupants ou tranchants
+    destin\xE9s \xE0 l'abandon, qu'ils aient \xE9t\xE9 ou non en contact avec un produit
+    biologique qui doivent \xEAtre \xE9limin\xE9s dans une boite rigide DASRI.\n-
+    les poches de produits sanguins labiles, m\xEAme vides\n- les perfusions de chimioth\xE9rapie
+    apr\xE8s administration\n- ainsi que les d\xE9chets anatomiques non ais\xE9ment
+    identifiables\n\nLes autres d\xE9chets sont dits DAOM  \xAB D\xE9chets Assimil\xE9s
+    aux ordures M\xE9nag\xE8res \xBB et sont mis dans des sacs poubelles noires. Les
+    sacs poubelles noires sont \xE0 \xE9liminer par la famille via le r\xE9seau habituel
+    de traitement des d\xE9chets.\n        "

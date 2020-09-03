@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: flacon_SHA
+  m_EditorClassIdentifier: 
+  Number: 6
+  Name: flacon_SHA
+  Group: Medicaments
+  Answers:
+  - "Ce flacon de SHA est p\xE9rim\xE9, il doit \xEAtre remplac\xE9."
+  - On ne doit pas mettre de flacon de SHA dans une chambre de patient.
+  - "La dur\xE9e de conservation d\u2019un flacon de SHA apr\xE8s ouverture est d\xE9finie
+    par le fabriquant et est toujours inf\xE9rieure \xE0 12 mois."
+  CorrectAnswers: 0000000002000000
+  ExplanationError: "L\u2019erreur \xE0 trouver \xE9tait que ce flacon de SHA est
+    p\xE9rim\xE9, il doit \xEAtre remplac\xE9.\n\r\nUn flacon de SHA doit toujours
+    \xEAtre disponible dans la chambre du patient.\n\nIl est important de noter la
+    date d\u2019ouverture sur le flacon de SHA (p\xE9remption apr\xE8s 6 mois d\u2019ouverture
+    pour la plupart des fournisseurs \xE0 confirmer aupr\xE8s de chaque laboratoire)."
+  ExplanationNonError: "Il n'y avait pas d'erreur \xE0 trouver ici.\n\nUn flacon de
+    SHA doit toujours \xEAtre disponible dans la chambre du patient.\n\nLe flacon
+    de SHA est bien conforme (plein et non p\xE9rim\xE9).\n\nIl est important de noter
+    la date d\u2019ouverture sur le flacon de SHA (p\xE9remption apr\xE8s 6 mois d\u2019ouverture
+    pour la plupart des fournisseurs \xE0 confirmer aupr\xE8s de chaque laboratoire)."

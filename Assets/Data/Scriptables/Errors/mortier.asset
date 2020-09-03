@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: mortier
+  m_EditorClassIdentifier: 
+  Number: 14
+  Name: mortier
+  Group: Medicaments
+  Answers:
+  - "Les comprim\xE9s d\u2019ALFUZOSINE LP 10mg ne doivent pas \xEAtre \xE9cras\xE9s."
+  - "Si des comprim\xE9s ne sont pas \xE9crasables, et qu'il existe une alternative
+    th\xE9rapeutique, celle-ci devra \xEAtre prescrite par le m\xE9decin."
+  - "Il est important d'\xE9craser ou d\u2019ouvrir le m\xE9dicament imm\xE9diatement
+    avant l'administration."
+  CorrectAnswers: 000000000100000002000000
+  ExplanationError: "D\u2019apr\xE8s la liste des m\xE9dicaments des comprim\xE9s
+    \xE9crasables et des g\xE9lules ouvrables disponible sur le site de la SFPC, il
+    est recommand\xE9 pour les comprim\xE9s d\u2019ALFUZOSINE LP 10 mg de :\n\n- <b>Ne
+    pas croquer\n- Ne pas m\xE2cher\n- Ne pas \xE9craser ou broyer\n\r\n...car il
+    y a un risque de lib\xE9ration et d'absorption inappropri\xE9e et donc des effets
+    ind\xE9sirables pouvant \xEAtre pr\xE9coces.</b>\n\n\rIl faut donc trouver une
+    alternative th\xE9rapeutique.\n\nIci les g\xE9lules de TAMSULOSINE LP 0,4 mg,
+    \xE9quivalent non strict, pourront \xEAtre propos\xE9es. Ces g\xE9lules peuvent
+    \xEAtre ouvertes : attention cependant il ne faut pas \xE9craser ou croquer les
+    microgranules \xE0 lib\xE9ration prolong\xE9e qui sont \xE0 l'interieur. L'ouverture
+    de la g\xE9lule et la mise en solution des granules doit se faire de fa\xE7on
+    extemporan\xE9e, juste avant l'administration.\n\r\nIl est important d\u2019\xE9craser
+    le m\xE9dicament imm\xE9diatement avant l\u2019administration car le contraire
+    constitue un risque potentiel d\u2019administrer le traitement au mauvais patient
+    et la poudre ainsi obtenue risque de se d\xE9grader rapidement au contact de l\u2019air
+    et de la lumi\xE8re.\n\r\nL\u2019alternative th\xE9rapeutique choisie devra \xEAtre
+    prescrite par le m\xE9decin."
+  ExplanationNonError: "Rien \xE0 signaler."

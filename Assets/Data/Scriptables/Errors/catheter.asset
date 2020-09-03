@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: catheter
+  m_EditorClassIdentifier: 
+  Number: 7
+  Name: catheter
+  Group: Medicaments
+  Answers:
+  - "Le site de perfusion doit rester \xE9tanche et st\xE9rile pour \xE9viter tout
+    risque de contamination."
+  - "Ce cath\xE9ter aurait d\xFB \xEAtre enlev\xE9 apr\xE8s 24H pour pr\xE9venir le
+    risque de complications infectieuses."
+  - "Ce cath\xE9ter aurait du \xEAtre retir\xE9 du fait de l'inflammation sur le point
+    de ponction."
+  CorrectAnswers: 0000000002000000
+  ExplanationError: "L'erreur \xE0 trouver \xE9tait que le pansement aurait d\xFB
+    \xEAtre chang\xE9 car d\xE9coll\xE9 et que le cath\xE9ter aurait du \xEAtre retir\xE9
+    du fait du point d'inflammation sur le point de ponction.\n\nLe site de perfusion
+    doit rester \xE9tanche et st\xE9rile pour \xE9viter tout risque de contamination.\n\nIl
+    est donc n\xE9cessaire d'assurer une surveillance r\xE9guli\xE8re du point de
+    ponction (recherche de signes d'inflammataion) et du pansement qui peut facilement
+    se d\xE9coller, notamment en cas de sudation importante.\n\nLa r\xE9\xE9valuation
+    de la pertinence de maintien du cath\xE9ter p\xE9riph\xE9rique doit \xEAtre au
+    minimum quotidienne.\n\nIl est fortement recommand\xE9 de retirer tout cath\xE9ter
+    p\xE9riph\xE9rique d\xE8s que celui-ci n\u2019est plus indiqu\xE9.\n\nIl est fortement
+    recommand\xE9 de retirer le cath\xE9ter en cas de complication locale ou de suspicion
+    d\u2019infection syst\xE9mique li\xE9e au cath\xE9ter."
+  ExplanationNonError: "Le site de perfusion doit rester \xE9tanche et st\xE9rile
+    pour \xE9viter tout risque de contamination.\n\nIl est donc n\xE9cessaire d'assurer
+    une surveillance r\xE9guli\xE8re du point de ponction (recherche de signes d'inflammataion)
+    et du pansement qui peut facilement se d\xE9coller, notamment en cas de sudation
+    importante.\n\nLa r\xE9\xE9valuation de la pertinence de maintien du cath\xE9ter
+    p\xE9riph\xE9rique doit \xEAtre au minimum quotidienne.\n\nIl est fortement recommand\xE9
+    de retirer tout cath\xE9ter p\xE9riph\xE9rique d\xE8s que celui-ci n\u2019est
+    plus indiqu\xE9.\n\nIl est fortement recommand\xE9 de retirer le cath\xE9ter en
+    cas de complication locale ou de suspicion d\u2019infection syst\xE9mique li\xE9e
+    au cath\xE9ter."

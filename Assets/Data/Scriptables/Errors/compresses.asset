@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d2f802d23da5f49835bb369ff98e09, type: 3}
+  m_Name: compresses
+  m_EditorClassIdentifier: 
+  Number: 5
+  Name: compresses
+  Group: Hygiene
+  Answers:
+  - "Les compresses souill\xE9es doivent \xEAtre \xE9limin\xE9es d\xE8s la fin des
+    soins par la personne ayant r\xE9alis\xE9 les soins : elles ne devraient pas \xEAtre
+    laiss\xE9es sur le chariot."
+  - "Les compresses peuvent \xEAtre laiss\xE9es sur le lit du patient jusqu\u2019\xE0
+    la fin du soin."
+  - "Les sacs poubelles jaunes sont destin\xE9s aux ordures m\xE9nag\xE8res."
+  CorrectAnswers: 00000000
+  ExplanationError: "L\u2019erreur \xE9tait que les compresses n\u2019auraient pas
+    d\xFB \xEAtre laiss\xE9es sur le chariot mais auraient d\xFB \xEAtre jet\xE9es
+    imm\xE9diatement apr\xE8s utilisation.\n\nLes d\xE9chets d\u2019activit\xE9s de
+    soins doivent \xEAtre g\xE9r\xE9s par la personne qui fait les soins et \xE9limin\xE9s
+    d\xE8s la fin des soins dans un sac poubelle adapt\xE9.\n\nLes <b>D</b>\xE9chets
+    d'<b>A</b>ctivit\xE9s de <b>S</b>oins \xE0 <b>R</b>isques <b>I</b>nfectieux (DASRI)
+    sont constitu\xE9s des d\xE9chets pr\xE9sentant un risque infectieux du fait de
+    la pr\xE9sence de micro-organismes, viables ou de leurs toxines. D'autre part,
+    m\xEAme en l'absence de risque infectieux, sont \xE9galement \xE0 consid\xE9rer
+    syst\xE9matiquement comme DASRI :\n\n- les mat\xE9riaux piquants, coupants ou
+    tranchants destin\xE9s \xE0 l'abandon, qu'ils aient \xE9t\xE9 ou non en contact
+    avec un produit biologique, GEDI 20117\n- les produits sanguins \xE0 usage th\xE9rapeutique
+    dont la poche est perc\xE9e, les produits sanguins partiellement ou enti\xE8rement
+    transfus\xE9s ainsi que les transfuseurs\n- les perfusions de chimioth\xE9rapie
+    apr\xE8s administration\n- ainsi que les d\xE9chets anatomiques non ais\xE9ment
+    identifiables\n\nLes autres d\xE9chets produits \xE0 l\u2019h\xF4pital sont dit
+    \xAB D\xE9chets Assimil\xE9s aux ordures M\xE9nag\xE8res \xBB.\n\nChaque \xE9tablissement
+    de sant\xE9 \xE9tablit avec son prestataire  de traitement des d\xE9chets une
+    proc\xE9dure sp\xE9cifique de tri des d\xE9chets. Il est donc important de s\u2019y
+    r\xE9f\xE9rer selon l\u2019\xE9tablissement dans lequel on exerce."
+  ExplanationNonError: "Rien \xE0 signaler."
