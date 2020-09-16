@@ -36,6 +36,7 @@ public class ReportManager : MonoBehaviour
         {
             m_Reports[i].StartReporting(i);
         }
+        StartLogReport();
     }
 
     public bool IsReporting()
@@ -47,5 +48,13 @@ public class ReportManager : MonoBehaviour
     {
         Transform container = m_LinesContainer;
         Instantiate(m_LinesPrefab, container).Setup(itemName, itemInfo, target, successLevel);
+    }
+
+    public void StartLogReport()
+    {
+        string fName = ReportLogs.GenerateTimeStamp();
+        Debug.Log(fName);
+        ReportLogs rlogs = new ReportLogs(fName + ".xml");
+        rlogs.GenerateLogFile(m_Reports);
     }
 }

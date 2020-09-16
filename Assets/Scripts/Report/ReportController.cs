@@ -1,11 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 using Sirenix.OdinInspector;
 using DG.Tweening;
-using UnityEngine.UI;
 using TMPro;
-using System.Linq;
 
 public class ReportController : MonoBehaviour
 {
@@ -175,6 +175,17 @@ public class ReportController : MonoBehaviour
     public ErrorScriptable GetData()
     {
         return m_Error.GetData();
+    }
+
+    public bool GetErroneous()
+    {
+        return m_Error.GetErroneous();
+    }
+
+    public int[] GetAnswers() 
+    {
+        int[] answers = m_Error.GetAnswers();
+        return answers;
     }
 
     [Button]

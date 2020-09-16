@@ -72,6 +72,10 @@ public class ErrorController : MonoBehaviour {
         return m_Error;
     }
 
+    public int[] GetAnswers() {
+        return _answers;
+    }
+
     private void Start() {
         m_UILine.material = Instantiate(m_UILine.material);
 
